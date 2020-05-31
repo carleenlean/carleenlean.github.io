@@ -1,0 +1,75 @@
+/* Style the links inside the sidenav */
+#sidenav a {
+    position: fixed;
+    left: -120px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 155px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}  
+#sidenav a:hover {
+    left: 0;
+}  
+
+/* Side start---  The about link: 20px from the top with a green background. gap 70px */
+#introduction {
+    top: 30px;
+    background-color: #E74C3C;
+}
+#setup {
+    top: 100px;
+    background-color: #8E44AD;
+}
+#structure {
+    top: 170px;
+    background-color: #E67E22;
+}
+#seleniumlibrary {
+    top: 240px;
+    background-color: #3498DB; /* Blue */
+}
+#builtin {
+    top: 335px;
+    background-color: #F31299; /* Red */
+}
+#collections {
+    top: 405px;
+    background-color: #2ECC71 /* Light Black */
+}
+#datetime {
+    top: 475px;
+    background-color: #F39C12 /* Light Black */
+}
+#dialog {
+    top: 545px;
+    background-color: #85C1E9 /* Light Black */
+}
+#string {
+    top: 615px;
+    background-color: #F3CA12 /* Light Black */
+}
+#project {
+    top: 685px;
+    background-color: #E74C3C /* Light Black */
+}
+/* Side end---  The about link: 20px from the top with a green background. gap 60px */
+
+#fb {
+    text-align: right;
+}
+
+#contact{
+    position: fixed;
+    top: 90%;
+    right: -5px;
+    border-radius: 5px;
+    border: 1px solid #2031ad;
+    padding: 15px 10px;
+    /* background-color: rgb(219, 239, 245); */
+    color: #580956;
+    text-decoration: none;
+}

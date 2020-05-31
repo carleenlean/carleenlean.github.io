@@ -1,0 +1,121 @@
+body{
+    margin: auto;
+    width: 80%;
+    color: #2031ad;
+}
+.main{
+    /* margin-left: 80px; */
+    /* border-left: 2px solid #2031ad; */
+    padding-left: 20px;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bolder;
+    text-align: right;
+    padding: 50px;
+    border-right: 2px solid #2031ad;
+    border-bottom: 2px solid #2031ad;
+    margin-top: 0px;
+    /* border-bottom: 2px solid #2031ad; */
+}
+h3 {
+    text-align: center;
+}
+p, table, ul, ol, h3{
+    font-size: 1.5rem;
+}
+table{
+    width: 720px;
+    margin: auto;
+}
+table, th, td{
+    border: 1px inset #2031ad;
+    padding: 2px;
+}
+td a{
+    text-decoration: none;
+}
+.script{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    list-style-type: none;
+    margin: 30px;
+    padding: 20px;
+    /* color: #eb5f43; */
+    border-left: 10px solid #3096f3;
+    background-color: #dcfdfd;
+    border-radius: 5px 0px 0px 5px;
+}
+em{
+    color: #F39C12;
+}
+.explain{
+    color: #535853;
+    font-style: italic;
+    /* font-size: 1.5em; */
+}
+.point{
+    font-weight: bolder;
+}
+hr{
+    border-style: dashed none none none;
+    border-color: #2031ad;
+    border-width: 3px;
+    width: 60%;
+}
+
+/* ================ Contact Area ================*/
+#message{
+    font-family: Verdana, Tahoma, sans-serif;
+    margin: 50px 300px;
+    width: 55%;
+    padding: 20px;
+}
+.name{
+    font-size: 1.5em;
+}
+.word{
+    font-size: 1.45em;
+    color: #FFFFFF;
+}
+.holder, #word{
+    margin: 15px 12px;
+    width: 300px;
+    border-radius: 5px;
+    border: 2px solid #3DA2E5;
+    font-size: 1.2em;
+    color: #E0E3E5;
+}
+.holder{
+        height: 20px;
+}#send{
+    margin: 15px 0px 5px 210px;
+    font-size: 1.2em;
+    color: #2031ad;
+    font-weight: bolder;
+    border: none;
+    background-color: #FFFFFF;
+}
+/* ================ Contact Area ================*/
+
+footer{
+    text-align: right;
+    height: 60px;
+    font-style: italic;
+    color: #555B5D;
+}
+
+
+
+
+#play js
+button{
+    padding: 10px;
+    border: 5px solid red;
+    border-radius: 5px;
+}
