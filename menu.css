@@ -59,10 +59,19 @@
 /* Side end---  The about link: 20px from the top with a green background. gap 60px */
 
 #fb {
-    text-align: right;
+    /* display: block; */
+    /* float: right; */
+    /* text-align: right; */
 }
-
-#contact{
+#counter img {
+    /* display: block; */
+    float: right;
+    width: 66px;
+    /* float: right; */
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#contact {
     position: fixed;
     top: 90%;
     right: -5px;

@@ -51,10 +51,19 @@
             </div>
         </div>
         <!--Main content-->
-        <!-- facebook link -->
-        <div id="fb">
-            <div class="fb-like" data-href="https://carleenlean.github.io/" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
+        <!-- web counter -->
+        <div id="counter">
+            <!-- hitwebcounter Code START -->
+            <a href="https://www.hitwebcounter.com" target="_blank">
+            <img src="https://hitwebcounter.com/counter/counter.php?page=7387961&style=0007&nbdigits=6&type=ip&initCount=0" title="Web Counter" Alt="counter free"   border="0" >
+            </a>
         </div>
+        <!-- web counter -->
+        <br>
+        <!-- facebook link -->
+            <div id="fb">
+            <div class="fb-like" data-href="https://carleenlean.github.io/" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
+            </div>
         <!-- facebook link -->
         <div class="wrapper">
             <div class="main">
@@ -91,7 +100,31 @@
                 <h3>*** Variables ***</h3>
                 <ul>
                     <li>Variables: 這個結構區塊可以讓我們填入變數。什麼是變數呢？你可以把它想像成一個儲存箱。你可以儲存任何模式的字串在這個儲存箱裡面。然後你可以在任何地方存取這個儲存箱裡面的資料。<br>
-                    例如：定義了一個變數 <em>${abc123}</em> 然後我在這個變數儲存字串 <em>user01</em>。</li>
+                    例如：我在 Variables 區塊定義了一個變數 <em>${username}</em> 然後我在這個變數儲存一個字串 <em>user01</em>。</li>
+                    <img src="img/variable01.png" alt="what is variable">
+                    你可以看到在範例圖示的第 11 排：
+                    <p>
+                        <ul class="script">
+                            <li>Input Text&nbsp;&nbsp;&nbsp;&nbsp;//*[@id="login-username"]&nbsp;&nbsp;&nbsp;&nbsp;${username}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="explain">&#8677;解釋: 輸入文字（<em>Input Text</em>）並且在定義網頁的位置（<em>//*[@id="login-username"]</em>）輸入文字，這個文字就會是我們在 Variables 區塊定義的變數 ${username} 也就是 <em>user01</em>&#8676;</span></li><br>
+                            <li>現在看不懂沒有關係，陸續會說明～</li>
+                        </ul>
+                    </p>
+                </ul>
+                <h3>*** Test Cases ***</h3>
+                <ul>
+                    <li>Test Cases: 這個結構區塊可以依據既有的關鍵字（Keywords）建立測試用例。</li>
+                    <ul>
+                        <li>Keywords 導入方式一： Standard library。先是在 Settings 結構區塊定義要導入的 Standard Library。然後即可使用導入 Library 裡面的關鍵字。 </li>
+                        <li>Keywords 導入方式二： 在設定區塊導入 Resource File 設定外部檔案連結。先是在 Settings 結構區塊定義要導入的 Resource。然後即可在 Test Cases 區塊使用導入檔案的關鍵字。</li>
+                        <img class="line" src="img/keyword_resource.png" alt="keywordresource">
+                        <img class="line" src="img/keyfile.png" alt="keywordfile">
+                        <li>Keywords 導入方式三： 直接在目前檔案的 Keywords 區塊建立Keywords 不用在 Settings 進行導入。 </li>
+                        <img src="img/keyin.png" alt="keyin">
+                    </ul>
+                </ul>
+                <h3>*** Keywords ***</h3>
+                <ul>
+                    <li>Keywords: 這個結構區塊定義自己</li>
                 </ul>
             </div>
         </div>
