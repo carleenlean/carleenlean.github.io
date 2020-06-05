@@ -41,13 +41,13 @@
                 <a href="index.html" id="introduction">RF 介紹</a>
                 <a href="setup.html" id="setup">RF 設定</a>
                 <a href="structure.html" id="structure">RF 內容結構</a>
-                <!-- <a href="selenium.html" id="seleniumlibrary">Selenium<br>Library</a>
+                <a href="selenium.html" id="seleniumlibrary">Selenium<br>Library</a>
                 <a href="builtin.html" id="builtin">BuiltIn</a>
                 <a href="collections.html" id="collections">Collections</a>
                 <a href="datetime.html" id="datetime">DateTime</a>
                 <a href="dialog.html" id="dialog">Dialog</a>
                 <a href="string.html" id="string">String</a>
-                <a href="project.html" id="project">範例教學</a> -->
+                <a href="project.html" id="project">範例教學</a>
             </div>
         </div>
         <!--Main content-->
@@ -112,19 +112,41 @@
                 </ul>
                 <h3>*** Test Cases ***</h3>
                 <ul>
-                    <li>Test Cases: 這個結構區塊可以依據既有的關鍵字（Keywords）建立測試用例。</li>
+                    <li>Test Cases: 這個結構區塊是由已定義的關鍵字（Keywords）建立測試用例情境與步驟。</li>
                     <ul>
                         <li>Keywords 導入方式一： Standard library。先是在 Settings 結構區塊定義要導入的 Standard Library。然後即可使用導入 Library 裡面的關鍵字。 </li>
-                        <li>Keywords 導入方式二： 在設定區塊導入 Resource File 設定外部檔案連結。先是在 Settings 結構區塊定義要導入的 Resource。然後即可在 Test Cases 區塊使用導入檔案的關鍵字。</li>
+                        <li>Keywords 導入方式二： 在設定區塊導入 Resource File 設定外部檔案連結。先是在 Settings 結構區塊定義要導入的 Resource。然後即可在 Test Cases 區塊使用導入 keywords 檔案所要用的關鍵字。</li>
                         <img class="line" src="img/keyword_resource.png" alt="keywordresource">
                         <img class="line" src="img/keyfile.png" alt="keywordfile">
-                        <li>Keywords 導入方式三： 直接在目前檔案的 Keywords 區塊建立Keywords 不用在 Settings 進行導入。 </li>
+                        <li>Keywords 導入方式三： 直接在目前檔案的 Keywords 區塊建立 Keywords 不用在 Settings 進行導入可直接使用關鍵字。 </li>
                         <img src="img/keyin.png" alt="keyin">
                     </ul>
                 </ul>
                 <h3>*** Keywords ***</h3>
                 <ul>
-                    <li>Keywords: 這個結構區塊定義自己</li>
+                    <li>Keywords: 這個結構區塊可以定義自己要使用的關鍵字。可以把很多測試步驟濃縮成一個關鍵字。然後可以方便重複使用就不用每次要進行同個步驟都要輸入同樣的步驟。例如：一個網站需要登入帳號測試。那就可以設定一個關鍵字 ”登入網站“，然後把所有的測試步驟定義在這個關鍵字裡面。這樣這個關鍵字就包含所有需要登入帳號的測試步驟。每次只要遇到這個情境只要輸入這個關鍵字就可以執行，不用重複輸入多個步驟。</li>
+                    <p>
+                        <ul class="script">
+                            <p>定義關鍵字</p>
+                            <li id="scripttitle">Login to Yahoo</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open Browser&nbsp;&nbsp;&nbsp;&nbsp;https://www.yahoo.com.tw&nbsp;&nbsp;&nbsp;&nbsp;chrome</li><br>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Click Element&nbsp;&nbsp;&nbsp;&nbsp;xpath: //*[@id="uh-profile"]</li><br>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Input Text&nbsp;&nbsp;&nbsp;&nbsp;xpath: //*[@id="login-username"]&nbsp;&nbsp;&nbsp;&nbsp;user01</li><br>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Click Button&nbsp;&nbsp;&nbsp;&nbsp;下一步</li><br>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Input Text&nbsp;&nbsp;&nbsp;&nbsp;xpath: //*[@id="login-passwd"]&nbsp;&nbsp;&nbsp;&nbsp;pass01</li><br>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Click Button&nbsp;&nbsp;&nbsp;&nbsp;xpath: //*[@id="login-signin"]</li><br>
+                            <li>所有登入 Yahoo 網站測試步驟從開啟網頁到登入成功全部都在 “Login to Yahoo” 這個關鍵字裡面。在其他的測試情境裡面如果我需要登入 Yahoo 網站，就只需要輸入關鍵字 “Login to Yahoo”即可登入 Yahoo 網站。</li>
+                        </ul>
+                        <ul class="script">
+                            <p>未定義關鍵字（重複性的情境每次都要重新再打這麼多步驟）</p>
+                            <li>Open Browser&nbsp;&nbsp;&nbsp;&nbsp;https://www.yahoo.com.tw&nbsp;&nbsp;&nbsp;&nbsp;chrome</li><br>
+                            <li>Click Element&nbsp;&nbsp;&nbsp;&nbsp;xpath: //*[@id="uh-profile"]</li><br>
+                            <li>Input Text&nbsp;&nbsp;&nbsp;&nbsp;xpath: //*[@id="login-username"]&nbsp;&nbsp;&nbsp;&nbsp;user01</li><br>
+                            <li>Click Button&nbsp;&nbsp;&nbsp;&nbsp;下一步</li><br>
+                            <li>Input Text&nbsp;&nbsp;&nbsp;&nbsp;xpath: //*[@id="login-passwd"]&nbsp;&nbsp;&nbsp;&nbsp;pass01</li><br>
+                            <li>Click Button&nbsp;&nbsp;&nbsp;&nbsp;xpath: //*[@id="login-signin"]</li><br>
+                        </ul>
+                    </p>
                 </ul>
             </div>
         </div>
