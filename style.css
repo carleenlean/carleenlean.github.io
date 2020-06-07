@@ -10,8 +10,7 @@ body{
 }
 img{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20px auto;
 }
 h1{
     font-family: Verdana, Tahoma, sans-serif;
@@ -51,6 +50,15 @@ td a{
     background-color: #dcfdfd;
     border-radius: 5px 0px 0px 5px;
 }
+#scripttitle{
+    display: inline-block;
+    margin-bottom: 10px;
+    background-color: yellow;
+    padding: 5px;
+}
+.script p {
+    margin-top: -5px;
+}
 em{
     color: #F39C12;
 }
@@ -68,7 +76,6 @@ hr{
     border-width: 3px;
     width: 60%;
 }
-
 /* ================ Contact Area ================*/
 #message{
     font-family: Verdana, Tahoma, sans-serif;
