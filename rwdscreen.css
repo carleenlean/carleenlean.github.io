@@ -1,0 +1,27 @@
+@media screen and (max-width: 768px){
+    .colorbox {
+        visibility: hidden;
+    }
+    h1 {
+        border-left: 2px solid #2031ad;
+        text-align: center;
+    }
+    .hid {
+        visibility: hidden;
+    }
+    .wrapper {
+        margin-left: 0px;
+    }
+    .nobull {
+        margin: 25px -40px;
+    }
+    img {
+        max-width: 100%;
+    }
+    table {
+        width: 100%;
+    }
+    #contact {
+        visibility: hidden;
+    }
+}

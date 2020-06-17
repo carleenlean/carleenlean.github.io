@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="menu.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="rwdscreen.css">
         <link rel="icon" type="image/png" href="img/favicon.png">
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167416723-1"></script>
@@ -34,13 +35,13 @@
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v7.0"></script>
         <!-- facebook link -->
-        <h1>卡琳自動化教學 - Robot Framework 介紹</h1>
+        <h1>卡琳自動化教學<span class="hid"> - </span>Robot Framework<span class="hid"> 介紹</span></h1>
         <!--Side bar menu-->
         <div class="colorbox">
             <div id="sidenav">
                 <a href="index.html" id="introduction">RF 介紹</a>
                 <a href="setup.html" id="setup">RF 安裝</a>
-                <a href="structure.html" id="structure">RF 內容結構</a>
+                <a href="structure.html" id="structure">RF 概念</a>
                 <!-- <a href="selenium.html" id="seleniumlibrary">Selenium<br>Library</a>
                 <a href="builtin.html" id="builtin">BuiltIn</a>
                 <a href="collections.html" id="collections">Collections</a>
@@ -69,16 +70,16 @@
         <div class="wrapper">
             <div class="main">
                 <p>
-                    Robot Framework 是一個不需要有任何程式語言基礎的工具。讓沒有程式語言背景的測試工程師跨越艱澀的程式語言邏輯也可以順利的讓測試達到自動跑起來的目的。
+                    Robot Framework 是一個不需要有任何程式語言基礎的自動化工具。讓沒有程式語言背景的測試工程師跨越艱澀的程式語言邏輯跟訓練也可以順利的讓測試達到自動跑起來的目的。
                 </p>
                 <p>    
-                    目標教學 – 建立 Robot Framework 自動化教學的初衷，有許多人想要從手動測試工程師轉為自動化測試工程師。卻因為找不到適合自己程度的資料而無法順利學習。本站希望可以藉由這個網站降低學習的門檻並且幫助想要擁有多項技能的測試工程師成長進而學習。
+                    建立 Robot Framework 自動化教學的初衷，是由於許多人想要從手動測試工程師轉為自動化測試工程師。卻因為找不到適合自己的資料而無法順利學習。本站希望可以藉由這個網站降低學習的門檻並且幫助想要擁有多項技能的測試工程師成長進而學習。
                 </p>
                 <p>
-                    讓我們開始學起來吧！！！ 來～來～ 接下來讓我講講 Robot Framework 的運用邏輯是什麼吧～ 你可以把它想像成... 一個指令一個動作的操作邏輯。假設我們要用瀏覽器打開一個網頁。這個時候我就會告訴電腦，使用關鍵字 <em>Open Browser</em> 打開網址 <em>https://www.yahoo.com.tw</em> 而且指定使用 <em>chrome</em> 瀏覽器開啟。<em>Close Browser</em> 最後再關掉瀏覽器。
+                    讓我們開始學起來吧！！！ 來～來～ 接下來讓我講講 Robot Framework 的運用邏輯是什麼吧～ 你可以把它想像成... 一個指令一個動作的操作邏輯。假設我們要用瀏覽器打開一個網頁。這個時候就會告訴電腦，使用關鍵字 <em>Open Browser</em> 打開網址 <em>https://www.yahoo.com.tw</em> 然後使用 <em>chrome</em> 瀏覽器開啟。最後再使用關鍵字<em>Close Browser</em> 關掉瀏覽器。
                 </p>
                 <p>
-                    這時候完整的腳本就像下面的範例呈現：
+                    完整的腳本就像下面的範例呈現：
                 </p>
                 <p>
                     <ul class="script">
@@ -87,8 +88,7 @@
                     </ul>
                 </p>
                 <p>
-                    看起來不會很難吧？！ 它難就是難在如何正確的理解以及正確使用各個不同的關鍵字。
-                    講到這裡，是不是不會太難呢？！也許它也可以變成你選擇自動化的其中一個選擇喔！！！
+                    看起來不會很難吧？！ 它難就是難在如何正確的理解以及正確使用各個不同的關鍵字。講到這裡，是不是不會太難呢？！也許它也可以變成你選擇自動化的其中一個工具喔！！！
                 </p>
                 <p>
                     以下是比較常用到的官方標準資料庫：
@@ -123,7 +123,7 @@
                         <td>轉換文字  長度確認  結合文字  頁面文字必須符合</td>
                     </tr>
                 </table>
-                <p>**官方參考網站：<a href="http://robotframework.org/robotframework/#standard-libraries">http://robotframework.org/robotframework/#standard-libraries</a></p>
+                <p class="official">**官方參考網站：<a href="http://robotframework.org/robotframework/#standard-libraries">Robot Framework Standard Library</a></p>
             </div>
         </div>
         <a href="contact.html" id="contact">問問題</a>

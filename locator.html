@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>卡琳自動化教學 - Robot Framework 概念</title>
+        <meta name="description" content="想學自動化真的需要先學習程式語言嗎？ 也許有更多其他的選擇喔！！ 進來了解一下 Robot Framework 吧。 也許更適合你喔！！">
+        <meta name="keywords" content="Robot Framework, Automation, Automation for beginner, 自動化學習初學者, 自動化簡單易懂, 自動化工具, 卡琳自動化">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="menu.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="rwdscreen.css">
+        <link rel="icon" type="image/png" href="img/favicon.png">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167416723-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+        
+            gtag('config', 'UA-167416723-1');
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+            <!-- facebook link -->
+            <!-- You can use open graph tags to customize link previews.
+            Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+            <meta property="og:url"           content="https://carleenlean.github.io/" />
+            <meta property="og:type"          content="website" />
+            <meta property="og:title"         content="卡琳自動化教學" />
+            <meta property="og:description"   content="想學自動化真的需要先學習程式語言嗎？ 也許 Robot Framework ✌也可以是其中的一個選擇喔！！ 進來了解一下 Robot Framework 吧。 也許更適合你喔！！" />
+            <!-- <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" /> -->
+            <!-- facebook link -->
+    </head>
+    <body>
+        <!-- facebook link -->
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v7.0"></script>
+        <!-- facebook link -->
+        <h1>卡琳自動化教學<span class="hid"> - </span>Robot Framework<span class="hid"> 概念</span></h1>
+        <!--Side bar menu-->
+        <div class="colorbox">
+            <div id="sidenav">
+                <a href="index.html" id="introduction">RF 介紹</a>
+                <a href="setup.html" id="setup">RF 設定</a>
+                <a href="structure.html" id="structure">RF 概念</a>
+                <!-- <a href="selenium.html" id="seleniumlibrary">Selenium<br>Library</a>
+                <a href="builtin.html" id="builtin">BuiltIn</a>
+                <a href="collections.html" id="collections">Collections</a>
+                <a href="datetime.html" id="datetime">DateTime</a>
+                <a href="dialog.html" id="dialog">Dialog</a>
+                <a href="string.html" id="string">String</a>
+                <a href="project.html" id="project">範例教學</a> -->
+            </div>
+        </div>
+        <!--Main content-->
+        <!-- web counter -->
+        <div id="counter">
+            <!-- hitwebcounter Code START -->
+            <a href="https://www.hitwebcounter.com" target="_blank">
+            <img src="https://hitwebcounter.com/counter/counter.php?page=7387961&style=0007&nbdigits=6&type=ip&initCount=0" title="Web Counter" Alt="counter free"   border="0" >
+            </a>
+        </div>
+        <!-- web counter -->
+        <br>
+        <!-- facebook link -->
+            <div id="fb">
+            <div class="fb-like" data-href="https://carleenlean.github.io/" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
+            </div>
+        <!-- facebook link -->
+        <div class="wrapper">
+            <div class="main">
+                <ul class="nobull">
+                    <li>Robot Framework 概念：</li>
+                        <ul class="bull">
+                            <li>A. <a href="#section01">Robot Framework 檔案內容結構</a></li>
+                                <ul>
+                                    <li><a href="#section01">Settings</a></li>
+                                    <li><a href="#variables">Variables</a></li>
+                                    <li><a href="#testcases">Test Cases</a></li>
+                                    <li><a href="#keywords">Keywords</a></li>
+                                </ul>
+                                <li>B. <a href="locator.html">Robot Framework 網頁元素定位</a></li>
+                                <!-- <li>C. <a href="terminal.html">Robot Framework 執行終端</a></li>
+                                <li>D. <a href="report.html">Robot Framework 測試結果報告</a></li> -->
+                        </ul>
+                </ul>
+                <hr>
+                <h2>Robot Framework 網頁元素定位（Locators）</h2>
+                <p id="section02">Robot Framework 網頁元素定位: 一個網頁是由很多 HTML 元素組成的。什麼是元素呢？ 元素可以是網頁的一個標題，圖像，連結，段落，影片，其他更多。。。你可以想像成我們組裝一台機車，機車是要很多的 “零件” 組成一台機車。機車的零件包括： 龍頭，輪胎，前後燈，其他更多。。。元素可以想像成零件。<br>
+                </p>
+                <p>在 Robot Framework 元素定位是非常重要的。如果不了解如何定位網頁上元素的位置則無法成功執行想要的結果並且完成測試。兩種可能的結果，找不到元素，執行程式的時候一直失敗。另一個，定義到頁面其他元素的名字。例如：我要執行登出按鈕，可是一直按到登入按鈕。</p>
+                <p>根據 <a href="https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html">官方資料</a>，元素定位英文叫 “locator”。常用的包含以下類型：</p>
+                <ul>
+                    <li>id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>id="robot"</em></li>
+                    <li>name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>name="robot"</em></li>
+                    <li>class&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>class="robot"</em></li>
+                    <li>xpath&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>xpath="robot"</em></li>
+                    <li>css&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>css="robot"</em></li>
+                    <li>link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>link="robot"</em></li>
+                    <li>partial link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>partial link="robot"</em></li>
+                </ul>
+                <p>** 定位一個元素的時候只需要用上述其中一個方法定位。不用全部都使用喔！而我本身比較常用的是 xpath 與 css。畢竟這兩種定位方式直接使用右鍵複製就可以定位到了。因為網頁上面不一定會有 id 或是 class。而普遍網頁會有 xpath 與 css。</p>
+                <ul>
+                    <li>如何使用 Chrome 瀏覽器抓取元素偵測功能呢？ 首先要先打開 Chrome 的查看（Inspect）模式: </li>
+                    <ul>
+                        <li>第一種方法：滑鼠移動到想要查看的元素上面，並且按右鍵，選擇查看（Inspect）選項。</li>
+                        <img src="img/right_inspect.png" alt="chome dev">
+                        <li>第二種方法：滑鼠移動到 Chrome 右上角有一個 Chrome 設定, 選更多工具（More Tools）> 開發者模式（Developer Tools）。</li>
+                        <img src="img/settings_inspect.png" alt="chome dev">
+                        <li>開啟成功之後瀏覽器在右手邊就會多開一個查看元素視窗區塊。</li>
+                        <img src="img/chromedev.png" alt="chome dev">
+                    </ul>
+                </ul>
+                <ul>
+                    <p>右鍵選單可複製 xpath 與 css</p>
+                    <li>成功開啟查看元素視窗之後，如何查看指定元素的定位呢？ </li>
+                    <ul>
+                        <li>在元素上面按右鍵選擇查看，元素視窗區塊即刻導向到元素位置。</li>
+                        <img src="img/inspect.png" alt="">
+                        <li>接著按右鍵選擇複製 (Copy) > Copy XPath</li>
+                        <img src="img/xpath.png" alt="xpath">
+                        <li>結果是： <em>//*[@id="u_0_4"]/button/span</em>
+                        </li>
+                    </ul>
+                    <li>如果你要擷取 CSS 也是用一樣的方法，不同的是要複製的是 "Copy Selector"。</li>
+                </ul>
+                <ul>
+                    <li>name，id，class 與 link 他們擷取定位的方式是直接在元素裡面複製</li>
+                    <img src="img/locatorid.png" alt="">
+                    <li>使用右鍵選查看 (inspect) 開啟查看元素視窗之後，在元素地方點選元素 id 名字然後複製。所以這個 id 名字就是 “introduction”。寫進 locator 格式就是: id="introduction"。 </li>
+                    <li>如果要取的是 name 這個 name 名字就是 “introname”。寫進 locator 格式就是: name="introname"。 </li>
+                </ul>
+                <p>在 Chrome 有一個外掛叫 ChroPath。有興趣的朋友也可以使用看看，只需要按複製就可以把所想要元素的 xpath 或 css 顯示出來使用。
+                </p>
+                <img src="img/chropath.png" alt="chropath">
+            </div>
+        </div>
+        <a href="contact.html" id="contact">問問題</a>
+        <footer>
+            Copyright © 2020 卡琳自動化教學保留一切權利
+        </footer>
+        <script src="myScript.js"></script>
+    </body>
+</html>
