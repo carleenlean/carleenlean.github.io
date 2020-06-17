@@ -90,3 +90,8 @@
     color: #580956;
     text-decoration: none;
 }
+footer {
+    margin: 30px;
+    text-align: right;
+    font-style: italic;
+}
