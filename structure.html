@@ -78,9 +78,10 @@
                                     <li><a href="structure.html#testcases">Test Cases</a></li>
                                     <li><a href="structure.html#keywords">Keywords</a></li>
                                 </ul>
-                            <li>B. <a href="locator.html">Robot Framework 網頁元素定位</a></li>
-                            <!-- <li>C. <a href="terminal.html">Robot Framework 官方文件解析與執行終端</a></li>
-                            <li>D. <a href="report.html">Robot Framework 測試結果報告</a></li> -->
+                                <li>B. <a href="locator.html">Robot Framework 網頁元素定位</a></li>
+                                <li>C. <a href="offdoc.html">Robot Framework 官方文件解析</a></li>
+                                <li>D. <a href="terminal.html">Robot Framework 執行終端機</a></li>
+                                <li>E. <a href="report.html">Robot Framework 測試結果報告</a></li>
                         </ul>
                 </ul>
                 <hr>
@@ -110,7 +111,7 @@
                     <li><span class="point">Test Teardown</span>：這裡定義每個測試用例 (test case) 結束後要做什麼事情。例如：執行完每個測試用例之後，關閉瀏覽器。</li>
                     <img src="img/testcase.png" alt="testcase">
                     <li><span class="point">Documentation</span>: 這裡可以備註這一整套測試用例相關資訊以便讓其他自動化測試人員可以輕易知道這一整個測試用例的目的。</li>
-                    <li><span class="point">Timeout</span>: 這裡可以定義在測試用例拋出錯誤以前需要等待多久。</li>
+                    <li><span class="point">Timeout</span>: 這裡可以定義整組的測試套件在拋出錯誤以前需要等待多久。</li>
                 </ul>
                 <h3 id="variables">*** Variables ***</h3>
                 <p>變數結構區塊可以讓我們設置變數。什麼是變數呢？你可以把它想像成一個儲存箱。可以儲存任何模式的字串在這個儲存箱裡面。在任何地方就可以取用這個儲存箱裡面的資料。設置變數可以讓你在不同地方取用這個變數資料，如果之後想要改變變數的字串，直接在這個變數結構修改一次就可以了。<br>
@@ -144,10 +145,10 @@
                             <img src="img/tagtag.png" alt="">
                         </ul>
                         <li><span class="point">Documentation</span>: 這裡可以備註這一整套測試用例相關資訊以便讓其他自動化測試人員可以輕易知道這個測試用例的目的。</li>
-                        <li><span class="point">Timeout</span>: 這裡可以定義在測試用例拋出錯誤以前需要等待多久。</li>
+                        <li><span class="point">Timeout</span>: 這裡可以定義這個測試用例在拋出錯誤以前需要等待多久。</li>
                     </ul>
                 <h3 id="keywords">*** Keywords ***</h3>
-                <p>關鍵字結構區塊可以定義自己要使用的關鍵字。可以把很多測試步驟濃縮成一個關鍵字。然後可以方便重複使用就不用每次要進行同個步驟都要輸入同樣的步驟。例如：一個網站需要登入帳號測試。那就可以設定一個關鍵字 ”登入網站“，然後把所有的測試步驟定義在這個關鍵字裡面。這樣這個關鍵字就包含所有需要登入帳號的測試步驟。每次只要遇到這個情境只要輸入這個關鍵字就可以執行，不用重複輸入多個步驟。</p>
+                <p>關鍵字結構區塊可以定義自己要使用的關鍵字。可以把很多測試步驟濃縮成一個關鍵字。然後可以方便重複使用就不用每次要進行同個步驟都要輸入同樣的步驟。例如：一個網站需要登入帳號測試。那就可以設定一個關鍵字 ”登入網站“，然後把所有的測試步驟定義在這個關鍵字裡面。這樣這個關鍵字就包含所有需要登入帳號的測試步驟。每次只要遇到這個情境只要輸入這個關鍵字就可以執行，不用重複輸入多個步驟。為了不要讓執行檔案太亂，關鍵字檔案通常都會建成外部資源檔案做連結。</p>
                 <p>以下提供定義以及未定義的例子：</p>
                 <ul class="script">
                     <p>定義關鍵字</p>
