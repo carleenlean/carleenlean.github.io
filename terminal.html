@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>黑皮腦袋黑皮學習</title>
+        <meta name="description" content="想學自動化真的需要先學習程式語言嗎？ 也許有更多其他的選擇喔！！ 進來了解一下 Robot Framework 吧。 也許更適合你喔！！">
+        <meta name="keywords" content="Robot Framework, Automation, Automation for beginner, 自動化學習初學者, 自動化簡單易懂, 自動化工具, 卡琳自動化">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="menu.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="rwdscreen.css">
+        <link rel="icon" type="image/png" href="img/favicon.png">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167416723-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+        
+            gtag('config', 'UA-167416723-1');
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+            <!-- facebook link -->
+            <!-- You can use open graph tags to customize link previews.
+            Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+            <meta property="og:url"           content="https://carleenlean.github.io/" />
+            <meta property="og:type"          content="website" />
+            <meta property="og:title"         content="卡琳自動化教學" />
+            <meta property="og:description"   content="想學自動化真的需要先學習程式語言嗎？ 也許 Robot Framework ✌也可以是其中的一個選擇喔！！ 進來了解一下 Robot Framework 吧。 也許更適合你喔！！" />
+            <!-- <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" /> -->
+            <!-- facebook link -->
+    </head>
+    <body>
+        <!-- facebook link -->
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v7.0"></script>
+        <!-- facebook link -->
+        <h1>黑皮腦袋黑皮學習<br><span class="hid"></span>Robot Framework<span class="hid"> 執行終端機</span></h1>
+        <!--Side bar menu-->
+        <div class="colorbox">
+            <div id="sidenav">
+                <a href="index.html" id="introduction">RF 介紹</a>
+                <a href="setup.html" id="setup">RF 設定</a>
+                <a href="structure.html" id="structure">RF 概念</a>
+                <!-- <a href="selenium.html" id="seleniumlibrary">Selenium<br>Library</a>
+                <a href="builtin.html" id="builtin">BuiltIn</a>
+                <a href="collections.html" id="collections">Collections</a>
+                <a href="datetime.html" id="datetime">DateTime</a>
+                <a href="dialog.html" id="dialog">Dialog</a>
+                <a href="string.html" id="string">String</a>
+                <a href="project.html" id="project">範例教學</a> -->
+            </div>
+        </div>
+        <!--Main content-->
+        <!-- web counter -->
+        <div id="counter">
+            <!-- hitwebcounter Code START -->
+            <a href="https://www.hitwebcounter.com" target="_blank">
+            <img src="https://hitwebcounter.com/counter/counter.php?page=7387961&style=0007&nbdigits=6&type=ip&initCount=0" title="Web Counter" Alt="counter free"   border="0" >
+            </a>
+        </div>
+        <!-- web counter -->
+        <br>
+        <!-- facebook link -->
+            <div id="fb">
+            <div class="fb-like" data-href="https://carleenlean.github.io/" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
+            </div>
+        <!-- facebook link -->
+        <div class="wrapper">
+            <div class="main">
+                <ul class="nobull">
+                    <li>Robot Framework 概念：</li>
+                        <ul class="bull">
+                            <li>A. <a href="structure.html">Robot Framework 檔案內容結構</a></li>
+                                <ul>
+                                    <li><a href="structure.html#section01">Settings</a></li>
+                                    <li><a href="structure.html#variables">Variables</a></li>
+                                    <li><a href="structure.html#testcases">Test Cases</a></li>
+                                    <li><a href="structure.html#keywords">Keywords</a></li>
+                                </ul>
+                                <li>B. <a href="locator.html">Robot Framework 網頁元素定位</a></li>
+                                <li>C. <a href="offdoc.html">Robot Framework 官方文件解析</a></li>
+                                <li>D. <a href="terminal.html">Robot Framework 執行終端機</a></li>
+                                <li>E. <a href="report.html">Robot Framework 測試結果報告</a></li>
+                        </ul>
+                </ul>
+                <hr>
+                <h2 id="section03">Robot Framework 執行終端機</h2>
+                <p>Robot Framework 執行終端機允許使用者直接輸入指令命令電腦執行操作。讓我們使用 "cd" 這個指令來熟悉一下終端機的使用吧！執行 "cd" 後可以變換目前資料夾的位置。在 Robot Framework 要執行檔案的時候，必須先在終端機指向正確的檔案資料夾目錄才可以執行該目錄的 robot 檔案。</p>
+                <ul class="script">
+                    <p>執行在 projects 資料夾裡面的一個 robot 檔案 "test.robot"。</p>
+                    <li>步驟一：打開 Visual Studio 裡面的終端機 (Terminal)。 </li>
+                    <img src="img/newterm.png" alt="">
+                    <li>步驟二：在終端機輸入&nbsp;&nbsp;&nbsp;&nbsp;<em>cd&nbsp;&nbsp;&nbsp;&nbsp;/Users/Documents/projects</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="explain">&#8677;使用 <em>cd</em> 指令變更目前所在資料夾位置到 <em>../projects</em>&#8676;</span></li> 
+                    <li>步驟三：成功導向到執行檔所屬資料夾 (projects) 之後。輸入指令執行檔案 &nbsp;&nbsp;&nbsp;&nbsp;<em>robot&nbsp;&nbsp;&nbsp;&nbsp;test.robot</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="explain">&#8677;執行測試用例檔案時使用 <em>robot</em> 執行檔案，然後打上執行檔的檔案名字 <em>test.robot</em>&#8676;</span></li>  
+                </ul>
+                <p>要執行測試用例檔案時，可以結合以下指令達到想要的測試報告結果</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>指令</th>
+                            <th>敘述</th>
+                            <th>範例</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>cd</td>
+                            <td>cd 代表 change directory。變更目前所在資料夾位置入徑。提醒：執行 .robot 檔案之前必須先指到執行檔所在位置，才能執行成功。<br>如果在不正確的資料夾位置執行檔案，則會出現這個訊息： <em>[ ERROR ] Parsing 'test.robot' failed: File or directory to execute does not exist.<br></em><span class="explain">&#8677;解釋：這個檔案不存在&#8676;</span></td>
+                            <td>cd /Documents/testfile</td>
+                        </tr>
+                        <tr>
+                            <td>.</td>
+                            <td>執行資料夾裡面所有的 robot 檔案。包括子文件夾裡面的 robot 檔案</td>
+                            <td>robot .</td>
+                        </tr>
+                        <tr>
+                            <td>--test</td>
+                            <td>執行某個測試用例。<br>例如：執行某個測試用例 "準備結帳"。</td>
+                            <td>robot --test 準備結帳 test.robot</td>
+                        </tr>
+                        <tr>
+                            <td>--i 或 --include “功能”</td>
+                            <td>執行所有 "功能" 標籤的測試用例。</td>
+                            <td>
+                                <ul>
+                                    <li>執行單一標籤用例<br>robot --i Functional test.robot</li>
+                                    <li>
+                                        執行兩種標籤用例<br>robot --i Functional <em>AND</em> Smoke test.robot
+                                    </li>
+                                    <li>
+                                        執行 Functional 或 Smoke 標籤用例<br>robot --i Functional <em>OR</em> Smoke test.robot
+                                    </li>
+                                    <li>
+                                        執行 Functional 可是不要執行 Smoke 標題用例<br>robot --i Functional <em>NOT</em> Smoke test.robot
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>--exclude "Minor"</td>
+                            <td>執行的時候排除所有 "Minor" 的測試用例</td>
+                            <td>robot --exclude "Minor" test.robot</td>
+                        </tr>
+                        <tr>
+                            <td>robot test.robot</td>
+                            <td>執行目前所在資料夾裡面單一檔案的測試用例</td>
+                            <td>robot test.robot</td>
+                        </tr>
+                        <tr>
+                            <td>--exclude<br> --include</td>
+                            <td>也可以混合使用不同的執行指令。</td>
+                            <td>robot --exclude Smoke<br> --include Major test.robot</td>
+                        </tr>
+                        <tr>
+                            <td>-d 或是 -outputdir</td>
+                            <td>指定報告輸出入徑</td>
+                            <td>robot -d /testfile/web project test.robot。如果指定的資料夾入徑尚未建立，執行檔案後則會建立指定名稱的資料夾。</td>
+                        </tr>
+                    </tbody>
+
+
+
+
+                        <!-- <tr>
+                            <td>--rerunfailed</td>
+                            <td>執行所有失敗的測試用例。這時候我們要執行的檔案是output.xml。</td>
+                            <td>robot --rerunfailed output.xml</td>
+                        </tr>
+                        <tr>
+                            <td>--rerunfailedsuites</td>
+                            <td>執行所有失敗的測試用例。這時候我們要執行的檔案是output.xml。</td>
+                            <td>robot --rerunfailed output.xml .</td>
+                        </tr>
+                        <tr>
+                            <td>--output 或是 --o</td>
+                            <td>指定 output.xml 報告輸出入徑。</td>
+                            <td>robot --o /Users/Documents/testfile</td>
+                        </tr>
+                        <tr>
+                            <td>--log 或是 --l</td>
+                            <td>指定 log.xml 報告輸出入徑。</td>
+                            <td>robot --l /Users/Documents/testfile</td>
+                        </tr>
+                        <tr>
+                            <td>--timestampoutputs 或是 --t</td>
+                            <td>輸出的檔案自動加上時間。</td>
+                            <td>robot --timestampoutputs test.robot</td>
+                        </tr>
+                        <tr>
+                            <td>--logtitle 或是 --reporttitle</td>
+                            <td>編輯輸出文件標題。</td>
+                            <td>robot --logtitle Functional_Test --reporttitle Functional Test</td>
+                        </tr>
+                        <tr>
+                            <td>--tagstatinclude</td>
+                            <td>輸出報告的統計包含的標籤。</td>
+                            <td>robot --tagstatinclude Functional_Test test.robot</td>
+                        </tr>
+                        <tr>
+                            <td>--tagstatexclude</td>
+                            <td>輸出報告的統計排除的標籤。</td>
+                            <td>robot --tagstatexclude Functional_Test test.robot</td>
+                        </tr> -->
+                </table>
+                <p>** 正在執行檔案的期間若要終止執行，請按 Ctrl + C 終止。</p>
+                <h3>終端機執行結果顯示</h3>
+                <img src="img/terminal_show01.png" alt="">
+                <table>
+                    <thead>
+                        <tr>
+                            <td colspan="2" class="center">第一個區塊：各別測試用例測試細節與結果
+                            <img src="img/terminal_detail.png" alt="">
+                            如果用例執行失敗，接著會顯示失敗原因以利測試人員瞭解如何解決。</td>
+                        </tr>
+                        <tr>
+                            <th>顯示</th>
+                            <th>解釋</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Test</td>
+                            <td>執行檔檔案名稱</td>
+                        </tr>
+                        <tr>
+                            <td>“開啟網站“，“Login to Website”</td>
+                            <td>這幾個是檔案定義的測試用例名稱</td>
+                        </tr>
+                        <tr>
+                            <td>這個用例讓我們使用瀏覽器開啟網站</td>
+                            <td>這是檔案定義的 Documentation</td>
+                        </tr>
+                        <tr>
+                            <td>Button with locator...</td>
+                            <td>測試用例執行失敗的原因</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <thead>
+                        <tr>
+                            <td colspan="2" class="center">第二個區塊：測試項目總統計數據
+                            <img src="img/terminal_sum.png" alt="">
+                            檔案執行結束之後，顯示測試用例執行結果數據。下面顯示報告的總結果數據。包含總共測試了幾個用例，通過的有幾個，失敗的有幾個。</td>
+                        </tr>
+                        <tr>
+                            <th>顯示</th>
+                            <th>解釋</th>
+                        </tr>
+                        <tr>
+                            <td>2 critical tests, 1 passed, 1 failed</td>
+                            <td>總共執行 2 個嚴重測試用例, 1 通過, 1 失敗</td>
+                        </tr>
+                        <tr>
+                            <td>2 tests total, 1 passed, 1 failed</td>
+                            <td>總共測試 2個, 1 通過, 1 失敗</td>
+                        </tr>
+                    </thead>
+                </table>
+                <table>
+                    <thead>
+                        <td colspan="2" class="center">第三個區塊：報告輸出位置
+                            <img src="img/terminal_output.png" alt="">
+                            Output, Log, Report 這三個檔案報告輸出的位置。
+                        </td>
+                    </thead>
+                </table>
+            </div>
+        </div>
+        <a href="contact.html" id="contact">問問題</a>
+        <footer>
+            Copyright © 2020 黑皮腦袋黑皮生活保留一切權利  <a href="#top">&#8682</a>
+        </footer>
+        <script src="myScript.js"></script>
+    </body>
+</html>

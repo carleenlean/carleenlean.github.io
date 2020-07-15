@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>黑皮腦袋黑皮學習</title>
+        <meta name="description" content="想學自動化真的需要先學習程式語言嗎？ 也許有更多其他的選擇喔！！ 進來了解一下 Robot Framework 吧。 也許更適合你喔！！">
+        <meta name="keywords" content="Robot Framework, Automation, Automation for beginner, 自動化學習初學者, 自動化簡單易懂, 自動化工具, 卡琳自動化">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="menu.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="rwdscreen.css">
+        <link rel="icon" type="image/png" href="img/favicon.png">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167416723-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+        
+            gtag('config', 'UA-167416723-1');
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+            <!-- facebook link -->
+            <!-- You can use open graph tags to customize link previews.
+            Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+            <meta property="og:url"           content="https://carleenlean.github.io/" />
+            <meta property="og:type"          content="website" />
+            <meta property="og:title"         content="卡琳自動化教學" />
+            <meta property="og:description"   content="想學自動化真的需要先學習程式語言嗎？ 也許 Robot Framework ✌也可以是其中的一個選擇喔！！ 進來了解一下 Robot Framework 吧。 也許更適合你喔！！" />
+            <!-- <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" /> -->
+            <!-- facebook link -->
+    </head>
+    <body>
+        <!-- facebook link -->
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v7.0"></script>
+        <!-- facebook link -->
+        <h1>黑皮腦袋黑皮學習<br><span class="hid"></span>Robot Framework<span class="hid"> 測試結果報告</span></h1>
+        <!--Side bar menu-->
+        <div class="colorbox">
+            <div id="sidenav">
+                <a href="index.html" id="introduction">RF 介紹</a>
+                <a href="setup.html" id="setup">RF 設定</a>
+                <a href="structure.html" id="structure">RF 概念</a>
+                <!-- <a href="selenium.html" id="seleniumlibrary">Selenium<br>Library</a>
+                <a href="builtin.html" id="builtin">BuiltIn</a>
+                <a href="collections.html" id="collections">Collections</a>
+                <a href="datetime.html" id="datetime">DateTime</a>
+                <a href="dialog.html" id="dialog">Dialog</a>
+                <a href="string.html" id="string">String</a>
+                <a href="project.html" id="project">範例教學</a> -->
+            </div>
+        </div>
+        <!--Main content-->
+        <!-- web counter -->
+        <div id="counter">
+            <!-- hitwebcounter Code START -->
+            <a href="https://www.hitwebcounter.com" target="_blank">
+            <img src="https://hitwebcounter.com/counter/counter.php?page=7387961&style=0007&nbdigits=6&type=ip&initCount=0" title="Web Counter" Alt="counter free"   border="0" >
+            </a>
+        </div>
+        <!-- web counter -->
+        <br>
+        <!-- facebook link -->
+            <div id="fb">
+            <div class="fb-like" data-href="https://carleenlean.github.io/" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
+            </div>
+        <!-- facebook link -->
+        <div class="wrapper">
+            <div class="main">
+                <ul class="nobull">
+                    <li>Robot Framework 概念：</li>
+                        <ul class="bull">
+                            <li>A. <a href="structure.html">Robot Framework 檔案內容結構</a></li>
+                                <ul>
+                                    <li><a href="structure.html#section01">Settings</a></li>
+                                    <li><a href="structure.html#variables">Variables</a></li>
+                                    <li><a href="structure.html#testcases">Test Cases</a></li>
+                                    <li><a href="structure.html#keywords">Keywords</a></li>
+                                </ul>
+                                <li>B. <a href="locator.html">Robot Framework 網頁元素定位</a></li>
+                                <li>C. <a href="offdoc.html">Robot Framework 官方文件解析</a></li>
+                                <li>D. <a href="terminal.html">Robot Framework 執行終端機</a></li>
+                                <li>E. <a href="report.html">Robot Framework 測試結果報告</a></li>
+                        </ul>
+                </ul>
+                <hr>
+                <h2 id="section03">Robot Framework 測試結果報告</h2>
+                <p>Robot Framework 測試結果報告是其中一個重要的優點，而且簡單易懂。如果完全了解 Robot Framework 執行檔案裡面的結構，就可以很有效的產生自己定義的測試報告。</p>
+                <p>測試執行完成之後會產生 3個檔案： log.html，output.xml，report.html</p>
+                <img src="img/report_files.png" alt="">
+                <ul>
+                    <li>log.html: 這個檔案只是讓 report.html 排板起來比較好看的一個檔案。</li>
+                    <li>output.html: 這個檔案涵蓋了 report.html 裡面的資訊。</li>
+                    <li>report.html: 點開這個檔案即可看到測試報告總統計結果。這個檔案整合了上述的兩個檔案之後呈現的報告結果。</li>
+                </ul>
+                <h3>測試總結顯示內容 - Test Report</h3>
+                <img src="img/testreport01.png" alt="">
+                <p>**報告背景顏色： 如果全部的測試通過，報告背景就會呈現綠色。某一個項目失敗的時候呈現會是紅色的。</p>
+                <p>第一個區塊： Summary Information（測試執行總結）</p>
+                <ul>
+                    <li>Status (測試狀態): 測試結果概要</li>
+                    <li>Start Time (測試開始時間): 執行測試當天開始日期與時間</li>
+                    <li>End Time (測試結束時間): 執行測試當天結束日期與時間</li>
+                    <li>Elapsed Time (執行時間): 執行測試總共花費的時間</li>
+                    <li>Log File (日誌檔案): 日誌檔案名稱</li>
+                </ul>
+                <p>第二個區塊： Total Statistics（總統計數據）</p>
+                <p>統計數據分成三個類型：</p>
+                <ul>
+                    <li>Total Statistics (總統計數據): 這個區塊依嚴重程度統計總共有幾個通過以及幾個失敗的測試用例。</li>
+                    <li>Statistics by Tag (依標籤統計數據): 這個區塊依標籤分類統計幾個通過以及幾個失敗的測試用例。</li>
+                    <li>Statistics by Suite (依整套測試用例統計): 這個區塊依據不同的測試檔案統計總共有幾個通過以及幾個失敗的測試用例。一個測試檔案代表一個 suite。</li>
+                </ul>
+                <p>第三個區塊： Test Details（測試細項）</p>
+                <p>這邊可依據 Totals（全部），Tags（標籤），Suites （套件）標籤選取想要查看的細項。並且可以選 Search（搜尋）依不同的搜尋條件查看。</p>
+                <img src="img/testreport02.png" alt="">
+                <p>點選 “Test.開啟網站” 就會直接導向該測試用例日誌細節資料。</p>
+                <img src="img/log_det01.png" alt="">
+                <!-- <h3>測試日誌顯示內容 - Test Log</h3>
+                <p>點開之後若要看細項可點右上角的 "LOG"。Log 裡面會依據每個執行過的測試用例顯示執行結果細項以及顯示測試截圖的圖示。</p>
+                <img src="img/report02.png" alt="">
+                <img src="img/report03.png" alt="">
+                <p>在這個報告裡面可以看到，Robot Framework 可以成功顯示中文。這個有很大的好處，如果想要產生一個中文報告供客戶參考。這是一個很方便的功能。</p>
+                <p>目前確認可正常顯示中文的地方：</p>
+                <ul>
+                    <li>Tags (標籤)</li>
+                    <li>Documentation (標註/註解)</li>
+                    <li>Keywords (關鍵字)</li>
+                </ul> -->
+            </div>
+        </div>
+        <a href="contact.html" id="contact">問問題</a>
+        <footer>
+            Copyright © 2020 黑皮腦袋黑皮生活保留一切權利  <a href="#top">&#8682</a>
+        </footer>
+        <script src="myScript.js"></script>
+    </body>
+</html>

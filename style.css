@@ -35,25 +35,72 @@ h2{
 h3 {
     text-align: center;
 }
+/* 整體字的大小 */
 p, table, ul, ol, h3{
     font-size: 1.5rem;
 }
-table{
-    width: 80%;
+.shortcut {
+    width: 90%;
+    margin: 25px auto;
+    border-top: 2px dashed #1b6ca8;
+}
+.shortcut {
+    border-bottom: 2px dashed #1b6ca8;
+}
+.shortcut {
+    font-size: 18px;
+    color: #888888;
+    padding: 10px;
+}
+/* keyword and arguement */
+/* .key {
+    font-style: italic;
+    color:
+}
+.arr {
+    font-style: italic;
+    color:
+} */
+.example {
+    color: red;
+    font-size: 23px;
+}
+table, #docs {
+    width: 90%;
     margin: auto;
 }
 table, th, td{
-    border: 1px inset #2031ad;
-    padding: 2px;
+    border: 1px solid #2031ad;
+    padding: 30px;
+    border-collapse: collapse;
+}
+#docs tr:nth-child(even){
+    background-color: #D9F5F2;
+}
+/* #docs tr:hover {
+    background-color: #fbd46d;
+} */
+#docs th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #f37121;
+    color: white;
+}
+th {
+    background-color: #f37121;
+    color: white;
 }
 td a{
     text-decoration: none;
 }
 tr td {
-    padding: 10px;
+    border-spacing: 5px;
     text-align: left;
 }
 tr th {
+    text-align: center;
+}
+.center {
     text-align: center;
 }
 .script{
