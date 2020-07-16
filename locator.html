@@ -91,13 +91,13 @@
                 <p>在 Robot Framework 元素定位是非常重要的。如果不了解如何定位網頁上元素的位置則無法成功執行想要的結果並且完成測試。兩種可能的結果，找不到元素，執行程式的時候一直失敗。另一個，定義到頁面其他元素的名字。例如：我要執行登出按鈕，可是一直按到登入按鈕。</p>
                 <p>根據 <a href="https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html">官方資料</a> 元素定義為 “locator”。常用的定位包含以下類型：</p>
                 <ul class="listindent">
-                    <li>id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>id="robot"</em></li>
-                    <li>name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>name="robot"</em></li>
-                    <li>class&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>class="robot"</em></li>
-                    <li>xpath&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>xpath="//*[@id="u_0_4"]/button/span"</em></li>
-                    <li>css&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>css="robot"</em></li>
-                    <li>link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>link="robot"</em></li>
-                    <li>partial link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>partial link="framework"</em></li>
+                    <li>id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>id=SubmitButton</em></li>
+                    <li>name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>name=CustomerID</em></li>
+                    <li>class&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>class=wrapper-box</em></li>
+                    <li>xpath&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>xpath=//*[@id="u_0_4"]/button/span</em></li>
+                    <li>css&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>css=#section02</em></li>
+                    <li>link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>link=robot</em></li>
+                    <li>partial link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>partial link=framework</em></li>
                 </ul>
                 <p>** 定位一個元素的時候只需要用上述其中一個方法定位。不用全部都使用喔！而我本身比較常用的是 xpath 與 css。畢竟這兩種定位方式直接使用右鍵複製就可以定位到了。因為網頁上面不一定會有 id 或是 class。而普遍網頁會有 xpath 與 css。</p>
                 <p>如何使用 Chrome 瀏覽器抓取元素偵測功能呢？ 首先要先打開 Chrome 的查看（Inspect）模式:</p>
