@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>黑皮腦袋黑皮學習</title>
+        <title>&#10026; 黑皮腦袋黑皮學習 &#10026;</title>
         <meta name="description" content="想學自動化真的需要先學習程式語言嗎？ 也許有更多其他的選擇喔！！ 進來了解一下 Robot Framework 吧。 也許更適合你喔！！">
         <meta name="keywords" content="Robot Framework, Automation, Automation for beginner, 自動化學習初學者, 自動化簡單易懂, 自動化工具, 卡琳自動化">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,15 +35,15 @@
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v7.0"></script>
         <!-- facebook link -->
-        <h1>黑皮腦袋黑皮學習<br><span class="hid"></span>Robot Framework<span class="hid"> 概念</span></h1>
+        <h1>黑皮腦袋黑皮學習<br><span class="hid"></span>Robot Framework<span class="hid"> 檔案內容結構</span></h1>
         <!--Side bar menu-->
         <div class="colorbox">
             <div id="sidenav">
                 <a href="index.html" id="introduction">RF 介紹</a>
                 <a href="setup.html" id="setup">RF 設定</a>
                 <a href="structure.html" id="structure">RF 概念</a>
-                <!-- <a href="selenium.html" id="seleniumlibrary">Selenium<br>Library</a>
-                <a href="builtin.html" id="builtin">BuiltIn</a>
+                <a href="selenium.html" id="seleniumlibrary">Selenium<br>Library</a>
+                <!-- <a href="builtin.html" id="builtin">BuiltIn</a>
                 <a href="collections.html" id="collections">Collections</a>
                 <a href="datetime.html" id="datetime">DateTime</a>
                 <a href="dialog.html" id="dialog">Dialog</a>
@@ -78,10 +78,11 @@
                                     <li><a href="structure.html#testcases">Test Cases</a></li>
                                     <li><a href="structure.html#keywords">Keywords</a></li>
                                 </ul>
-                                <li>B. <a href="locator.html">Robot Framework 網頁元素定位</a></li>
-                                <li>C. <a href="offdoc.html">Robot Framework 官方文件解析</a></li>
-                                <li>D. <a href="terminal.html">Robot Framework 執行終端機</a></li>
-                                <li>E. <a href="report.html">Robot Framework 測試結果報告</a></li>
+                                <li>B. <a href="creation.html">Robot Framework 測試文件製作</a></li>
+                                <li>C. <a href="locator.html">Robot Framework 網頁元素定位</a></li>
+                                <li>D. <a href="offdoc.html">Robot Framework 官方文件解析</a></li>
+                                <li>E. <a href="terminal.html">Robot Framework 執行終端機</a></li>
+                                <li>F. <a href="report.html">Robot Framework 測試結果報告</a></li>
                         </ul>
                 </ul>
                 <hr>
@@ -102,7 +103,7 @@
                     正確導入執行時就 PASS 囉！！
                     <img src="img/keyfound.png" alt="keyfound">
                     </li>
-                    <li><span class="point">Resource</span>：讓我們主要可以連結外部資源檔案。為了讓我的檔案內容可以更乾淨利落很多時候我會把自訂關鍵字（稍後會寫到）寫在另一個檔案然後用 Resource 連結外部的關鍵字檔案。</li>
+                    <li><span class="point">Resource</span>（資源）：讓我們主要可以連結外部資源檔案。為了讓我的檔案內容可以更乾淨利落很多時候我會把自訂關鍵字（稍後會寫到）寫在另一個檔案然後用 Resource 連結外部的關鍵字檔案。</li>
                     <img src="img/resource.png" alt="resource">
                     <li><span class="point">Suite Setup</span>：這裡定義的是這一整組的測試用例 (test suite) 開始之前先執行什麼指令。例如：開始執行這一整組用例（好比說我有 6個測試用例）前，先啟動並登入服務器。那這個指令就會在跑第一個用例之前先啟動服務器，之後就再也不會執行這個指令。</li>
                     <li><span class="point">Suite Teardown</span>：這裡定義的是這一整組的測試用例 (test suite) 結束之後執行什麼指令。例如：這一整組用例（好比說我有 6個測試用例）跑完之後，登出並關閉服務器。那這個指令就會在最後一個（第6個）測試用例跑完之後登出並關閉服務器。</li>
@@ -110,8 +111,8 @@
                     <li><span class="point">Test Setup</span>：這裡定義每個測試用例 (test case)開始前先做什麼事情。例如：執行每個測試用例前，先打開瀏覽器。</li>
                     <li><span class="point">Test Teardown</span>：這裡定義每個測試用例 (test case) 結束後要做什麼事情。例如：執行完每個測試用例之後，關閉瀏覽器。</li>
                     <img src="img/testcase.png" alt="testcase">
-                    <li><span class="point">Documentation</span>: 這裡可以備註這一整套測試用例相關資訊以便讓其他自動化測試人員可以輕易知道這一整個測試用例的目的。</li>
-                    <li><span class="point">Timeout</span>: 這裡可以定義整組的測試套件在拋出錯誤以前需要等待多久。</li>
+                    <li><span class="point">Documentation</span>（說明）: 這裡可以說明這一整套測試用例相關資訊以便讓其他自動化測試人員可以輕易知道這一整個測試用例的目的。</li>
+                    <li><span class="point">Timeout</span>（等待時間）: 這裡可以定義整組的測試套件在拋出錯誤以前需要等待多久。</li>
                 </ul>
                 <h3 id="variables">*** Variables ***</h3>
                 <p>變數結構區塊可以讓我們設置變數。什麼是變數呢？你可以把它想像成一個儲存箱。可以儲存任何模式的字串在這個儲存箱裡面。在任何地方就可以取用這個儲存箱裡面的資料。設置變數可以讓你在不同地方取用這個變數資料，如果之後想要改變變數的字串，直接在這個變數結構修改一次就可以了。<br>
@@ -144,8 +145,8 @@
                             <li>一個測試用例可以有多個標籤。每個標籤距離為四個空格。</li>
                             <img src="img/tagtag.png" alt="">
                         </ul>
-                        <li><span class="point">Documentation</span>: 這裡可以備註這一整套測試用例相關資訊以便讓其他自動化測試人員可以輕易知道這個測試用例的目的。</li>
-                        <li><span class="point">Timeout</span>: 這裡可以定義這個測試用例在拋出錯誤以前需要等待多久。</li>
+                        <li><span class="point">Documentation</span>（說明）: 這裡可以說明這一整套測試用例相關資訊以便讓其他自動化測試人員可以輕易知道這個測試用例的目的。</li>
+                        <li><span class="point">Timeout</span>（等待時間）: 這裡可以定義這個測試用例在拋出錯誤以前需要等待多久。</li>
                     </ul>
                 <h3 id="keywords">*** Keywords ***</h3>
                 <p>關鍵字結構區塊可以定義自己要使用的關鍵字。可以把很多測試步驟濃縮成一個關鍵字。然後可以方便重複使用就不用每次要進行同個步驟都要輸入同樣的步驟。例如：一個網站需要登入帳號測試。那就可以設定一個關鍵字 ”登入網站“，然後把所有的測試步驟定義在這個關鍵字裡面。這樣這個關鍵字就包含所有需要登入帳號的測試步驟。每次只要遇到這個情境只要輸入這個關鍵字就可以執行，不用重複輸入多個步驟。為了不要讓執行檔案太亂，關鍵字檔案通常都會建成外部資源檔案做連結。</p>
@@ -172,7 +173,8 @@
                 </ul>
             </div>
         </div>
-        <a href="contact.html" id="contact">問問題</a>
+        <a href="#top" id="goup">回到最上面</a>
+        <a href="contact.html" id="contact">問問題</a>        
         <footer>
             Copyright © 2020 黑皮腦袋黑皮生活保留一切權利  <a href="#top">&#8682</a>
         </footer>

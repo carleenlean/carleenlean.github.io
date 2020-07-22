@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>&#10026; 黑皮腦袋黑皮學習 &#10026;</title>
+        <meta name="description" content="想學自動化真的需要先學習程式語言嗎？ 也許有更多其他的選擇喔！！ 進來了解一下 Robot Framework 吧。 也許更適合你喔！！">
+        <meta name="keywords" content="Robot Framework, Automation, Automation for beginner, 自動化學習初學者, 自動化簡單易懂, 自動化工具, 卡琳自動化">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="menu.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="rwdscreen.css">
+        <link rel="icon" type="image/png" href="img/favicon.png">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167416723-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+        
+            gtag('config', 'UA-167416723-1');
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+            <!-- facebook link -->
+            <!-- You can use open graph tags to customize link previews.
+            Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+            <meta property="og:url"           content="https://carleenlean.github.io/" />
+            <meta property="og:type"          content="website" />
+            <meta property="og:title"         content="卡琳自動化教學" />
+            <meta property="og:description"   content="想學自動化真的需要先學習程式語言嗎？ 也許 Robot Framework ✌也可以是其中的一個選擇喔！！ 進來了解一下 Robot Framework 吧。 也許更適合你喔！！" />
+            <!-- <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" /> -->
+            <!-- facebook link -->
+    </head>
+    <body>
+        <!-- facebook link -->
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v7.0"></script>
+        <!-- facebook link -->
+        <h1>黑皮腦袋黑皮學習<br><span class="hid"></span>Robot Framework<span class="hid"> 測試文件製作</span></h1>
+        <!--Side bar menu-->
+        <div class="colorbox">
+            <div id="sidenav">
+                <a href="index.html" id="introduction">RF 介紹</a>
+                <a href="setup.html" id="setup">RF 設定</a>
+                <a href="structure.html" id="structure">RF 概念</a>
+                <a href="selenium.html" id="seleniumlibrary">Selenium<br>Library</a>
+                <!-- <a href="builtin.html" id="builtin">BuiltIn</a>
+                <a href="collections.html" id="collections">Collections</a>
+                <a href="datetime.html" id="datetime">DateTime</a>
+                <a href="dialog.html" id="dialog">Dialog</a>
+                <a href="string.html" id="string">String</a>
+                <a href="project.html" id="project">範例教學</a> -->
+            </div>
+        </div>
+        <!--Main content-->
+        <!-- web counter -->
+        <div id="counter">
+            <!-- hitwebcounter Code START -->
+            <a href="https://www.hitwebcounter.com" target="_blank">
+            <img src="https://hitwebcounter.com/counter/counter.php?page=7387961&style=0007&nbdigits=6&type=ip&initCount=0" title="Web Counter" Alt="counter free"   border="0" >
+            </a>
+        </div>
+        <!-- web counter -->
+        <br>
+        <!-- facebook link -->
+            <div id="fb">
+            <div class="fb-like" data-href="https://carleenlean.github.io/" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
+            </div>
+        <!-- facebook link -->
+        <div class="wrapper">
+            <div class="main">
+                <ul class="nobull">
+                    <li>Robot Framework 概念：</li>
+                        <ul class="bull">
+                            <li>A. <a href="structure.html">Robot Framework 檔案內容結構</a></li>
+                                <ul>
+                                    <li><a href="structure.html#section01">Settings</a></li>
+                                    <li><a href="structure.html#variables">Variables</a></li>
+                                    <li><a href="structure.html#testcases">Test Cases</a></li>
+                                    <li><a href="structure.html#keywords">Keywords</a></li>
+                                </ul>
+                                <li>B. <a href="creation.html">Robot Framework 測試文件製作</a></li>
+                                <li>C. <a href="locator.html">Robot Framework 網頁元素定位</a></li>
+                                <li>D. <a href="offdoc.html">Robot Framework 官方文件解析</a></li>
+                                <li>E. <a href="terminal.html">Robot Framework 執行終端機</a></li>
+                                <li>F. <a href="report.html">Robot Framework 測試結果報告</a></li>
+                        </ul>
+                </ul>
+                <hr>
+                <h2 id="section03">Robot Framework 測試文件製作</h2>
+                <p>以下是手動測試情境的範例，著手把下面範例變成自動化：</p>
+                <ol>
+                    <li>開啟瀏覽器，到指定網站</li>
+                    <li>使用者開啟註冊頁面</li>
+                    <li>依序填入註冊資料</li>
+                    <li>按註冊鈕發送</li>
+                    <li>關閉瀏覽器</li>
+                </ol>
+                <p>讓我們從最基礎開始吧～</p>
+                <p>首先開啟 Visual Studio，並且開啟測試執行檔想要存入的資料夾位置。</p>
+                <img src="img/vs_openfolder.png" alt="">
+                <p>如果尚未建立所屬資料夾，請先建立一個新的資料夾然後開啟指定資料夾。</p>
+                <img src="img/vs_explorer_openfolder.png" alt="">
+                <p>選項從左到右解釋：新增新的檔案/新增新的資料夾/檔案總管資料重整/資料夾合起來</p>
+                <img src="img/vs_expand_option.png" alt="">
+                <p>請建立以下三個資料夾檔案：</p>
+                <img src="img/vs_folder_creation.png" alt="">
+                <ul>
+                    <li>resources (資源): 儲存自訂關鍵字檔案</li>
+                    <li>results (測試報告): 儲存所有執行測試的結果，包含執行測試時所擷取的圖檔</li>
+                    <li>tests (測試用例執行檔案): 儲存所有的測試用例檔案</li>
+                </ul>
+                <p>在 tests 資料夾建立一個檔案命名 "suite01.robot"</p>
+                <img src="img/vs_createfile.png" alt="">
+                <hr>
+                <p>第一個結構區塊 <em>*** Settings ***</em> 讓我們導入目前這個檔案的設定值以及說明。</p>
+                <ul>
+                    <li>使用 Documentation 為這個文件寫一個整體的說明。這個可寫也可不寫。不過如果檔案是共用的情況下，還是建議寫一下以便其他測試人員編輯時有效率的了解各別測試檔案的目的。</li>
+                    <p><em>Documentation  註冊頁面基本測試</em></p>
+                    <li>導入外部使用的 Library，這裡就是依據這個檔案會使用到的關鍵字導入所屬 Library。例如：這個檔案的關鍵字 <em>Open Browser</em>（開啟瀏覽器）屬於 Selenium Library 裡面的關鍵字，那我所需要導入的 Library 就只有 SeleniumLibrary 而已。BuiltIn 就不會在我的導入範圍。當然一個測試檔案可以導入很多個 Library。如果目前這個檔案會用到就必須要導入，才不會測試失敗抓不到需要的關鍵字。</li>
+                    <p><em>Library  SeleniumLibrary</em></p>
+                    <img src="img/vs_seleniumkey.png" alt="">
+                </ul>
+                <p>第二個結構區塊 <em>*** Test Cases ***</em> 讓我們創作註冊頁面基本測試用例。</p>
+                <p>開始創作第一個測試用例。創作的方式就是以寫故事的方式，從頭開始到最終要測試的結果。好比說，目前要測試網站是否可以成功註冊。那我就要從一開始的開啟瀏覽器 》 到指定網站 》 到開啟註冊頁面 》 到輸入各項註冊資訊（這一個步驟可不只看到的這麼簡單。通常會有使用者帳戶資訊以及密碼資訊。。。）》全部欄位輸入完成後按送出。</p>
+                <ul>
+                    <ul>
+                        <li>現在我們要找開啟瀏覽器並成功開啟網站的關鍵字，請到 https://carleenlean.github.io/selenium.html 查看開啟瀏覽器並導向網址的關鍵字 Open Browser (開啟瀏覽器)。查看結束後，回到我們的執行檔案設計一個測試用例名字 <em>打開網站註冊頁面</em>。</li>
+                        <p><em>打開網站註冊頁面</em></p>
+                        <li>跳到第二行，先按【TAB】然後輸入關鍵字 <em>Open Browser</em>空兩個，然後輸入瀏覽器要打開的網址 <em>https://www.wix.com/</em>然後空兩個輸入 <em>chrome</em> 用 chrome 瀏覽器開啟。</li>
+                        <p><em>Open Browser https://www.wix.com/ chrome</em></p>
+                        <li>接下來跳到第三行，編寫第二步驟： 使用者開啟註冊頁面</li>
+                        <li>這裡我們要先按下登入按鈕： 所以我們要再次的尋找關鍵字 Click Button (按指定按鈕)，並且輸入這個關鍵字的引述 元素定位。</li>
+                        <p><em>Click Button Sign In</em></p>
+                        <li>接下來跳到第四行，編寫第三步驟： 依序填入註冊資料。第一個欄位是 Email，先確認我們要用的關鍵字是什麼，我們要執行輸入，那關鍵字就是 <em>Input Text (輸入文字)	</em>。 這個欄位的元素定位是 <em>id=input_0</em>。另外這個關鍵字還需要一個引述 “輸入的文字”。 </li>
+                        <img src="img/locator_inputtext.png" alt="">
+                        <em>Input Text id=input_0 user01</em>
+                        <p>其他的欄位也是一樣的操作方式。密碼欄位使用關鍵字：Input Password (輸入密碼)。</p>
+                        <li>上述 Input 關鍵字寫完之後。接下來跳到下一行，編寫第四步驟： 按註冊鈕發送。因這是一個執行按按鈕的動作。所以與上述第三行是一樣關鍵字。</li>
+                        <em>Click Button css=body > login-dialog > div > signup > div > form > div.signin-section > div.signin-with-email > div.login-button > div > button</em>
+                        <li>最後，測試結束後關閉瀏覽器。使用的關鍵字是 <em>Close Browser</em>。</li>
+                    </ul>
+                    <p>下面是打開網站註冊頁面完整的測試情境：</p>
+                    <img src="img/introtest.png" alt="">
+                </ul>
+
+
+
+
+
+
+
+
+
+                <!-- <ol>
+                    <li>第二個結構區塊 <em>*** Variables ***</em> 設定變數，我們可以把重複使用或容易變動的數值設置為變數，那在任何地方都可以任意取用，並且如有需要可以一次性修改。</li>
+                </ol>
+                <ol>
+                    <li>第三個結構區塊 <em>*** Keywords ***</em> 設定自訂關鍵字。建議重複使用的操作情境可以寫成關鍵字使用。</li>
+                </ol> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+                </div>
+            </div>
+        </div>
+        <a href="#top" id="goup">回到最上面</a>
+        <a href="contact.html" id="contact">問問題</a>        
+        <footer>
+            Copyright © 2020 黑皮腦袋黑皮生活保留一切權利  <a href="#top">&#8682</a>
+        </footer>
+        <script src="myScript.js"></script>
+    </body>
+</html>

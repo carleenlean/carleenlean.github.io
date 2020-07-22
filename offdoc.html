@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>黑皮腦袋黑皮學習</title>
+        <title>&#10026; 黑皮腦袋黑皮學習 &#10026;</title>
         <meta name="description" content="想學自動化真的需要先學習程式語言嗎？ 也許有更多其他的選擇喔！！ 進來了解一下 Robot Framework 吧。 也許更適合你喔！！">
         <meta name="keywords" content="Robot Framework, Automation, Automation for beginner, 自動化學習初學者, 自動化簡單易懂, 自動化工具, 卡琳自動化">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -42,8 +42,8 @@
                 <a href="index.html" id="introduction">RF 介紹</a>
                 <a href="setup.html" id="setup">RF 設定</a>
                 <a href="structure.html" id="structure">RF 概念</a>
-                <!-- <a href="selenium.html" id="seleniumlibrary">Selenium<br>Library</a>
-                <a href="builtin.html" id="builtin">BuiltIn</a>
+                <a href="selenium.html" id="seleniumlibrary">Selenium<br>Library</a>
+                <!-- <a href="builtin.html" id="builtin">BuiltIn</a>
                 <a href="collections.html" id="collections">Collections</a>
                 <a href="datetime.html" id="datetime">DateTime</a>
                 <a href="dialog.html" id="dialog">Dialog</a>
@@ -78,10 +78,11 @@
                                     <li><a href="structure.html#testcases">Test Cases</a></li>
                                     <li><a href="structure.html#keywords">Keywords</a></li>
                                 </ul>
-                                <li>B. <a href="locator.html">Robot Framework 網頁元素定位</a></li>
-                                <li>C. <a href="offdoc.html">Robot Framework 官方文件解析</a></li>
-                                <li>D. <a href="terminal.html">Robot Framework 執行終端機</a></li>
-                                <li>E. <a href="report.html">Robot Framework 測試結果報告</a></li>
+                                <li>B. <a href="creation.html">Robot Framework 測試文件製作</a></li>
+                                <li>C. <a href="locator.html">Robot Framework 網頁元素定位</a></li>
+                                <li>D. <a href="offdoc.html">Robot Framework 官方文件解析</a></li>
+                                <li>E. <a href="terminal.html">Robot Framework 執行終端機</a></li>
+                                <li>F. <a href="report.html">Robot Framework 測試結果報告</a></li>
                         </ul>
                 </ul>
                 <hr>
@@ -91,15 +92,17 @@
                 <img src="img/library_des.png" alt="">
                 <ul>
                     <li>Keyword(關鍵字): 這就是先前提到的<a href="structure.html#keywords">關鍵字</a>。而在<a href="http://robotframework.org/robotframework/#standard-libraries">官方標準套件</a>裡面都是已經預先定義好的關鍵字。</li>
-                    <li>Arguments (引述): 這個欄位定義了哪些引述是需要被帶入的。如果沒有帶入必要的引述，執行測試時就會失敗。SeleniumLibrary 裡面有一個關鍵字 List Selection Should Be（清單必須包含的選項)。這一個關鍵字裡面需要兩個引述，一個是 "<em>locator</em>"（元素定位)，這裡的元素定位只能輸入一個。另一個是 "<em><sup>*</sup>expected</em>"。當引述出現了 <em>*</em> 這個符號這個引述代表可以輸入多個引述。<br>
+                    <li>Arguments (引述): 這個欄位定義了哪些引述是需要被帶入的。如果沒有帶入必要的引述，執行測試時就會失敗。SeleniumLibrary 裡面有一個關鍵字 List Selection Should Be（清單必須包含的選項)。這一個關鍵字裡面需要兩個引述，一個是 "<em>locator</em>"（元素定位)，這裡的元素定位只能輸入一個。另一個是 "<em><sup>*</sup>expected</em>"。當引述出現了 <em>*</em> 這個符號這個引述代表可以輸入單一或多個引述。<br>
                     <img src="img/multi_arg.png" alt="multi arg">
                     範例: <em>List Selection Should Be &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xpath="/div/name/wee"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vege&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coffee</em></li>
+                    <p>以這個範例來說，Vege 跟 Coffee 都是引述 expected（預期）的文字</p>
                     <li>Documentation (補充說明): 關鍵字補充說明或是範例解說。如果特定的關鍵字被停用了也會被紀錄在這個欄位。</li>
                 </ul>
                 </div>
             </div>
         </div>
-        <a href="contact.html" id="contact">問問題</a>
+        <a href="#top" id="goup">回到最上面</a>
+        <a href="contact.html" id="contact">問問題</a>        
         <footer>
             Copyright © 2020 黑皮腦袋黑皮生活保留一切權利  <a href="#top">&#8682</a>
         </footer>

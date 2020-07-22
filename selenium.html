@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>黑皮腦袋黑皮學習</title>
+        <title>&#10026; 黑皮腦袋黑皮學習 &#10026;</title>
         <meta name="description" content="想學自動化真的需要先學習程式語言嗎？ 也許有更多其他的選擇喔！！ 進來了解一下 Robot Framework 吧。 也許更適合你喔！！">
         <meta name="keywords" content="Robot Framework, Automation, Automation for beginner, 自動化學習初學者, 自動化簡單易懂, 自動化工具, 卡琳自動化">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="rwdscreen.css">
         <link rel="icon" type="image/png" href="img/favicon.png">
+        <script type="text/javascript" src="app.js"></script>  
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167416723-1"></script>
         <script>
@@ -43,12 +44,12 @@
                 <a href="setup.html" id="setup">RF 設定</a>
                 <a href="structure.html" id="structure">RF 概念</a>
                 <a href="selenium.html" id="seleniumlibrary">Selenium<br>Library</a>
-                <a href="builtin.html" id="builtin">BuiltIn</a>
+                <!-- <a href="builtin.html" id="builtin">BuiltIn</a>
                 <a href="collections.html" id="collections">Collections</a>
                 <a href="datetime.html" id="datetime">DateTime</a>
                 <a href="dialog.html" id="dialog">Dialog</a>
                 <a href="string.html" id="string">String</a>
-                <a href="project.html" id="project">範例教學</a>
+                <a href="project.html" id="project">範例教學</a> -->
             </div>
         </div>
         <!--Main content-->
@@ -69,53 +70,106 @@
         <div class="wrapper">
             <div class="main">
                 <p>SeleniumLibrary 包含瀏覽器基礎使用的關鍵字。行為包含：尋找頁面指定元素，開啟瀏覽器，截圖，執行 Javascript，滑鼠互動，回傳字串等。。。</p>
-                <p>**關鍵字過多時，若有指定要搜尋的關鍵字，建議按 Ctrl + F 直接搜尋相關文字。</p>
+                <p>&#8251; 關鍵字過多時，若有指定要搜尋的關鍵字，建議按 Ctrl + F 直接搜尋關鍵字。</p>
+                <div class="center">
+                    <button id="sendme" onclick="myFunction()">捷徑隱藏/顯示</button>
+                </div>
+                <div id="shortcut2">
                 <p class="shortcut">
-                    <a href="#AlertShouldBePresent">Alert Should Be Present (出現警告提示視窗)</a>  ||  <a href="#HandleAlert">Handle Alert (處理警告視窗)</a>  ||  <a href="#AlertShouldNotBePresent">Alert Should Not Be Present (確認沒有出現警告視窗)</a>  ||  <a href="#CaptureElementScreenshot">Capture Element Screenshot (擷取元素圖示)</a>  ||  <a href="#CapturePageScreenshot">Capture Page Screenshot (擷取頁面)</a>  ||  <a href="#CheckboxShouldBeSelected">Checkbox Should Be Selected (復選框勾選)</a>  ||  <a href="#CheckboxShouldNotBeSelected">Checkbox Should Not Be Selected (復選框不應該勾選)</a>  ||  <a href="#ClearElementText">Clear Element Text (清除元素裡面的文字)</a>  ||  <a href="#ClickButton">Click Button (按指定按鈕)</a>  ||  <a href="#ClickElement">Click Element (按指定元素)</a>  ||  <a href="#ClickElementAtCoordinates">Click Element At Coordinates (依元素定位的中心點移動 x 跟 y 的位置)</a>  ||  <a href="#ClickImage">Click Image (點擊圖示)</a>  ||  <a href="#ClickLink">Click Link (按指定連結)</a>  ||  <a href="#CloseAllBrowsers">Close All Browsers (關閉所有瀏覽器)</a>  ||  <a href="#CloseBrowser">Close Browser (關閉目前瀏覽器)</a>  ||  <a href="#CloseWindow">Close Window (關閉目前視窗/分頁)</a>  ||  <a href="#CoverElement">Cover Element (遮蓋某個元素)</a>  ||  <a href="#DeleteAllCookies">Delete All Cookies (刪除所有頁面追蹤紀錄)</a>  ||  <a href="#DoubleClickElement">Double Click Element (點擊指定元素兩次)</a>  ||  <a href="#DragAndDrop">Drag And Drop (拖拉元素)</a>  ||  <a href="#DragAndDropOffset">Drag And Drop By Offset (拖拉元素位移定位)</a>  ||  <a href="#ElementAttributeValueShouldBe">Element Attribute Value Should Be (元素屬性的值應該是)</a>  ||  <a href="#ElementShouldBeDisabled">Element Should Be Disabled (元素不在啟用狀態)</a>  ||  <a href="#ElementShouldBeEnabled">Element Should Be Enabled (元素在啟用狀態)</a>  ||    <a href="#ElementShouldBeFocused">Element Should Be Focused (元素在聚焦狀態)</a>  ||  <a href="#ElementShouldBeVisible">Element Should Be Visible (元素在顯示狀態)</a>  ||  <a href="#ElementShouldContain">Element Should Contain (元素定位包含文字)</a>  ||  <a href="#ElementTextShouldBe">Element Text Should Be (元素顯示文字)</a>  ||  <a href="#ExecuteJavascript">Execute Javascript (執行 Javascript)</a>  ||  <a href="#InputText">Input Text (輸入文字)</a>  ||  <a href="#InputPassword">Input Password (輸入密碼)</a>  ||  <a href="#OpenBrowser">Open Browser (開啟瀏覽器)</a>  ||  <a href="#PageShouldContainElement">Page Should Contain Element (頁面應包含此元素)</a>  ||  <a href="#WaitUntilPageContains">Wait Until Page Contains (等待直到頁面包含某個文字)</a>
+                    <a href="#AlertShouldBePresent">Alert Should Be Present (警示視窗顯示以及處理)</a>  ||  <a href="#HandleAlert">Handle Alert (警示視窗處理)</a>  ||  <a href="#AlertShouldNotBePresent">Alert Should Not Be Present (警示視窗不顯示)</a>  ||  <a href="#AssignIdToElement">Assign Id To Element (暫時性指定 ID）</a>  ||  <a href="#CaptureElementScreenshot">Capture Element Screenshot (擷取元素圖示)</a>  ||  <a href="#CapturePageScreenshot">Capture Page Screenshot (擷取頁面)</a>  ||  <a href="#CheckboxShouldBeSelected">Checkbox Should Be Selected (復選框勾選)</a>  ||  <a href="#CheckboxShouldNotBeSelected">Checkbox Should Not Be Selected (復選框不應該勾選)</a>  ||  <a href="#ClearElementText">Clear Element Text (清除元素裡面的文字)</a>  ||  <a href="#ClickButton">Click Button (按指定按鈕)</a>  ||  <a href="#ClickElement">Click Element (按指定元素)</a>  ||  <a href="#ClickElementAtCoordinates">Click Element At Coordinates (依元素定位的中心點移動 x 跟 y 的位置)</a>  ||  <a href="#ClickImage">Click Image (點擊圖示)</a>  ||  <a href="#ClickLink">Click Link (按指定連結)</a>  ||  <a href="#CloseAllBrowsers">Close All Browsers (關閉所有瀏覽器)</a>  ||  <a href="#CloseBrowser">Close Browser (關閉目前瀏覽器)</a>  ||  <a href="#CloseWindow">Close Window (關閉目前視窗/分頁)</a>  ||  <a href="#CoverElement">Cover Element (遮蓋指定元素)</a>  ||  <a href="#CurrentFrameShouldContain">Current Frame Should Contain (浮動框架應該包含)</a>  ||  <a href="#CurrentFrameShouldNotContain">Current Frame Should Not Contain (浮動框架不應該包含)</a>  ||  <a href="#DeleteAllCookies">Delete All Cookies (刪除所有頁面喜好紀錄)</a>  ||  <a href="#DoubleClickElement">Double Click Element (點擊指定元素兩次)</a>  ||  <a href="#DragAndDrop">Drag And Drop (拖拉元素)</a>  ||  <a href="#DragAndDropOffset">Drag And Drop By Offset (拖拉元素位移定位)</a>  ||  <a href="#ElementAttributeValueShouldBe">Element Attribute Value Should Be (元素屬性的值應該是)</a>  ||  <a href="#ElementShouldBeDisabled">Element Should Be Disabled (元素應在停用狀態)</a>  ||  <a href="#ElementShouldBeEnabled">Element Should Be Enabled (元素在啟用狀態)</a>  ||    <a href="#ElementShouldBeFocused">Element Should Be Focused (元素在聚焦狀態)</a>  ||  <a href="#ElementShouldBeVisible">Element Should Be Visible (元素在顯示狀態)</a>  ||  <a href="#ElementShouldContain">Element Should Contain (元素包含預期文字)</a>  ||  <a href="#ElementShouldNotBeVisible">Element Should Not Be Visible (元素不顯示)</a>  ||  <a href="#ElementShouldNotContain">Element Should Not Contain (元素不包含預期文字)</a>  ||  <a href="#ElementTextShouldBe">Element Text Should Be (元素預期文字)</a>  ||  <a href="#ElementTextShouldNotBe">Element Text Should Not Be (元素不預期文字)</a>  ||  <a href="#ExecuteJavascript">Execute Javascript (執行 Javascript)</a>  ||  <a href="#FrameShouldContain">Frame Should Contain (浮動框架應該包含文字)</a>  ||  <a href="#GetAllLinks">Get All Links (取得頁面所有連結的 ID)</a>  ||  <a href="#GetCookie">Get Cookie (取得瀏覽器 Cookie)</a>  ||  <a href="#GetElementAttribute">Get Element Attribute (回傳屬性值)</a>  ||  <a href="#GetElementCount">Get Element Count (回傳指定元素數量)</a>  ||  <a href="#GetElementSize">Get Element Size (回傳指定元素尺寸)</a>  ||  <a href="#GetHorizontalPosition">Get Horizontal Position (回傳頁面橫向位置)</a>  ||  <a href="#GetListItems">Get List Items (回傳清單項目)</a>  ||  <a href="#GetLocation">Get Location (回傳目前瀏覽視窗網址)</a>  ||  <a href="#GetLocations">Get Locations (回傳瀏覽器所有網址)</a>  ||  <a href="#GetSelectedListLabel">Get Selected List Label (回傳表單標籤)</a>  ||  <a href="#GetSelectedListLabels">Get Selected List Labels (回傳多個表單標籤)</a>  ||  <a href="#GetSelectedListValue">Get Selected List Value (回傳表單的值)</a>  ||  <a href="#GetSelectedListValues">Get Selected List Values (回傳多個表單的值)</a>  
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    ||  <a href="#InputText">Input Text (輸入文字)</a>  ||  <a href="#InputPassword">Input Password (輸入密碼)</a>  ||  <a href="#OpenBrowser">Open Browser (開啟瀏覽器)</a>  ||  <a href="#PageShouldContainElement">Page Should Contain Element (頁面應包含此元素)</a>  ||  <a href="#WaitUntilPageContains">Wait Until Page Contains (等待直到頁面包含某個文字)</a>
                 </p>
+                </div>
                 <table id="docs">
                     <thead>
                         <tr>
                             <th>關鍵字 (Keywords)</th>
                             <th>引述 (Arguements)</th>
-                            <th>範例</th>
+                            <th>使用範例 <br> (Usage Example)</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td id="AlertShouldBePresent">Alert Should Be Present (出現警告提示視窗)</td>
-                            <td><em>text=</em>（警示視窗文字）, <em>action=ACCEPT</em> (警示視窗處理), <em>timeout=None</em>（設定等待警示視窗出現的時間）</td>
+                            <td id="AlertShouldBePresent">Alert Should Be Present (警示視窗顯示以及處理)</td>
+                            <td><em>text=</em>（警示視窗顯示文字）, <em>action=ACCEPT</em> (確認警示視窗), <em>timeout=None</em>（設定等待警示視窗出現的時間）</td>
                             <td>
                                 <ul>
                                     <li>
-                                        使用引述：關鍵字/警示視窗文字/設定等待警示視窗出現的時間<br>
                                         <span class="example">Alert Should Be Present 您已經登入成功  5s</span>
+                                        <ul>
+                                            <li>Alert Should Be Present &#187; 關鍵字</li>
+                                            <li>您已經登入成功 &#187; 警示視窗顯示文字</li>
+                                            <li>警示視窗處理未設置 &#187; 警示視窗處理方式因未設置所以預設為 <em>ACCEPT</em> (確認)，警示視窗出現後處理方式是確認警示視窗。<br>若設為 <em>DISMISS</em>（取消），警示視窗出現後處理方式是取消警示視窗。若設為 <em>LEAVE</em>（不處理），警示視窗出現後會維持視窗開啟狀態；視窗不做任何確認或取消動作。</li>
+                                            <li>5s &#187; 等待警示視窗出現時間為 5s</li>
+                                        </ul>
                                     </li>
                                     <li>
-                                        使用引述：關鍵字/警示視窗文字/取消警示視窗/設定等待警示視窗出現的時間<br>
-                                        <span class="example">Alert Should Be Present 您已經登入成功 DISMISS 5s</span>
+                                        <span class="example">Alert Should Be Present 您已經登入成功 DISMISS 10s</span>
+                                        <ul>
+                                            <li>Alert Should Be Present &#187; 關鍵字</li>
+                                            <li>您已經登入成功 &#187; 警示視窗顯示文字</li>
+                                            <li>DISMISS &#187; 警示視窗處理訊息為 <em>DISMISS</em>，警示視窗出現後會取消警示視窗</li>
+                                            <li>10s &#187; 等待警示視窗出現時間為 10s</li>
+                                        </ul>
                                     </li>
                                 </ul>
                             </td>
                         </tr>
                         <tr>
-                            <td id="HandleAlert">Handle Alert (處理警告視窗)</td>
+                            <td id="HandleAlert">Handle Alert (警示視窗處理)</td>
                             <td><em>action=ACCEPT</em> (警示視窗處理), <em>timeout=None</em>（設定等待警示視窗出現的時間）</td>
                             <td>
                                 <p>視窗出現後有三種處理方法：確認視窗 (ACCEPT)，取消視窗 (DISMISS) 或是讓視窗維持開啟狀態 (LEAVE)。</p>
                                 <ul>
-                                    <li><span class="example">Handle Alert</span> (接受警告訊息)</li>
-                                    <li><span class="example">Handle Alert DISMISS 10s</span> (等待 10秒讓警告訊息出現後取消警告訊息)</li>
-                                    <li><span class="example">${message}= Handle Alert LEAVE</span> (把警告視窗的訊息存到 message 裡面並 使用 LEAVE 讓警告視窗維持開啟狀態)
-                                    </li>
+                                    <li><span class="example">Handle Alert</span> (確認警示視窗)</li>
+                                    <ul>
+                                        <li>Handle Alert &#187; 關鍵字</li>
+                                    </ul>
+                                    <li><span class="example">Handle Alert DISMISS 10s</span> (等待 10秒讓警示訊息出現後取消警示訊息視窗)</li>
+                                    <ul>
+                                        <li>Handle Alert &#187; 關鍵字</li>
+                                        <li>DISMISS &#187; 警示視窗處理訊息為 <em>DISMISS</em>，警示視窗出現後處理方式是取消警示視窗</li>
+                                        <li>10s &#187; 等待警示視窗出現時間為 10s</li>
+                                    </ul>
+                                    <li><span class="example">${message}= Handle Alert LEAVE</span></li>
+                                    <ul>
+                                        <li>${message}= &#187; 把警示視窗的訊息存到 message 裡面。儲存箱。變數。</li>
+                                        <li>Handle Alert &#187; 關鍵字</li>
+                                        <li>LEAVE &#187; 使用 <em>LEAVE</em> 讓警示視窗維持開啟狀態，警示視窗不做處理</li>
+                                    </ul>
                                 </ul>
                             </td>
                         </tr>
                         <tr>
-                            <td id="AlertShouldNotBePresent">Alert Should Not Be Present (不應該出現警告視窗)</td>
-                            <td><em>action=ACCEPT</em> (接受警示視窗), <em>timeout=0</em>（設定等待警示視窗出現的時間）</td>
+                            <td id="AlertShouldNotBePresent">Alert Should Not Be Present (警示視窗不顯示)</td>
+                            <td><em>action=ACCEPT</em> (警示視窗處理), <em>timeout=0</em>（設定等待警示視窗出現的時間）</td>
                             <td>
                                 <span class="example">Alert Should Not Be Present 5s</span>
+                                <ul>
+                                    <li>Alert Should Not Be Present &#187; 關鍵字</li>
+                                    <li>5s &#187; 等待警示視窗出現時間為 5s</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="AssignIdToElement">Assign Id To Element (暫時性指定 ID)</td>
+                            <td><em>locator</em> (元素定位), <em>ID</em></td>
+                            <td>
+                                <span class="example">Assign Id To Element xpath=/div/div/example memberID</span>
+                                <ul>
+                                    <li>Assign Id To Element &#187; 關鍵字</li>
+                                    <li>xpath=/div/div/example &#187; 元素定位</li>
+                                    <li>memberID &#187; 為元素指定暫時 ID。頁面重整後，指定的 ID 就失效。</li>
+                                </ul>
                             </td>
                         </tr>
                         <tr>
@@ -123,19 +177,28 @@
                             <td><em>locator</em> (元素定位), <em>filename=selenium-element-screenshot-{index}.png</em> (截圖的檔案輸出位置與檔名）</td>
                             <td>
                                 <ul>
-                                    <li>必要引述：locator (元素定位)</li>
                                     <li>
                                         設定圖檔名稱自動增加索引<br>
-                                        <span class="example">Capture Element Screenshot xpath=//*[@id="UHSearch"]/table/tbody/tr[2]/td/ul ../tutorial/element_show_<em>{index}</em>.png</span><br>
-                                        “../tutorial/” 指定檔案存入位置 "element_show_<em>{index}</em>.png" 指定圖示檔案名稱。<em>{index}</em> 可以幫指定名稱的圖檔自動增加一個索引，這樣可以預防既有的圖檔被覆蓋。
-                                        
+                                        <span class="example">Capture Element Screenshot xpath=//*[@id="UHSearch"]/table/tbody/tr[2]/td/ul ../directoryfolder/element_show_<em>{index}</em>.png</span><br>
+                                        <ul>
+                                            <li>Capture Element Screenshot &#187; 關鍵字</li>
+                                            <li>xpath=//*[@id="UHSearch"]/table/tbody/tr[2]/td/ul &#187; 元素定位</li>
+                                            <li>../directoryfolder/ &#187; 圖檔存入入徑</li>
+                                            <li>element_show_.png &#187; 圖檔指定名稱與格式</li>
+                                            <li><em>{index}</em> &#187; 幫指定名稱的圖檔自動增加一個索引並且遞增，預防既有的圖檔被覆蓋</li>
+                                        </ul>
                                     </li>
                                     <li>
-                                        設定圖檔指定名稱<br>
-                                        <span class="example">Capture Element Screenshot  xpath=//*[@id="UHSearch"]/table/tbody/tr[2]  test/imagetest_capture.png</span>
+                                        設定圖檔指定名稱，不加索引，不加存檔入徑<br>
+                                        <span class="example">Capture Element Screenshot  xpath=//*[@id="UHSearch"]/table/tbody/tr[2]  imagetest_capture.jpeg</span>
+                                        <ul>
+                                            <li>Capture Element Screenshot &#187; 關鍵字</li>
+                                            <li>xpath=//*[@id="UHSearch"]/table/tbody/tr[2] &#187; 元素定位</li>
+                                            <li>imagetest_capture.jpeg &#187; 圖檔指定名稱與格式</li>
+                                        </ul>
                                     </li>
                                     <li>
-                                        如果沒有設置截圖輸出入徑，輸出的檔案就會直接在目前所在的資料夾建立。
+                                        沒有設置截圖輸出入徑，輸出的檔案就會直接在目前所在的資料夾建立。
                                     </li>
                                 </ul>
                             </td>
@@ -144,64 +207,168 @@
                             <td id="CapturePageScreenshot">Capture Page Screenshot (擷取頁面)</td>
                             <td><em>filename=selenium-screenshot-{index}.png</em>（指定圖示輸出檔案名稱並且加索引）</td>
                             <td>
-                                <li><span class="example">Capture Page Screenshot img/testbutton-<em>{index}</em>.png</span> (指定檔案存的入徑 (img/)，並指定圖檔名稱 (testbutton-) 新增索引 (<em>{index}</em>)</li>
-                                <li><span class="example">Capture Page Screenshot</span> (未指定入徑時檔案直接存入執行檔所在位置)</li>
+                                <ul>
+                                    <li><span class="example">Capture Page Screenshot directoryfolder/testbutton-<em>{index}</em>.png</span>
+                                    <ul>
+                                        <li>Capture Page Screenshot &#187; 關鍵字</li>
+                                        <li>directoryfolder/ &#187; 檔案存入入徑</li>
+                                        <li>testbutton-.png &#187; 圖檔指定名稱與格式</li>
+                                        <li><em>{index}</em> » 幫指定名稱的圖檔自動增加一個索引並且遞增，預防既有的圖檔被覆蓋</li>
+                                    </ul>
+                                    <li><span class="example">Capture Page Screenshot</span> (未指定入徑時檔案直接存入執行檔所在位置)</li>
+                                    <ul>
+                                        <li>Capture Page Screenshot &#187; 關鍵字</li>
+                                    </ul>
+                                </ul>
                             </td>
                         </tr>
                         <tr>
                             <td id="CheckboxShouldBeSelected">Checkbox Should Be Selected (復選框勾選)</td>
                             <td><em>locator</em>（元素定位）</td>
-                            <td><span class="example">Checkbox Should Be Selected name=Checkbox</span></td>
+                            <td>
+                                <ul>
+                                    <li><span class="example">Checkbox Should Be Selected xpath=/html/body/div[2]/tbody/tr[2]/td[3]/input[1]</span></li>
+                                    <ul>
+                                        <li>Checkbox Should Be Selected &#187; 關鍵字</li>
+                                        <li>xpath=/html/body/div[2]/... &#187; 元素定位</li>
+                                    </ul>
+                                </ul>
+                            </td>
                         </tr>
                         <tr>
                             <td id="CheckboxShouldNotBeSelected">Checkbox Should Not Be Selected (復選框不應該勾選)</td>
                             <td><em>locator</em>（元素定位）</td>
-                            <td><span class="example">Checkbox Should Not Be Selected xpath=/html/body/div[2]/tbody/tr[2]/td[3]/input[3]</span></td>                        
+                            <td>
+                                <ul>
+                                    <li><span class="example">Checkbox Should Not Be Selected id=CheckCheck</span></li>
+                                    <ul>
+                                        <li>Checkbox Should Not Be Selected &#187; 關鍵字</li>
+                                        <li>id=CheckCheck &#187; id 元素定位</li>
+                                    </ul>
+                                </ul>
+                            </td>                        
                         </tr>
                         <tr>
                             <td id="ClearElementText">Clear Element Text (清除元素裡面的文字)</td>
                             <td><em>locator</em>（元素定位)<br>
                             </td>
-                            <td><span class="example">Clear Element Text xpath=/div/div/newmember</span>
+                            <td>
+                                <ul>
+                                    <li><span class="example">Clear Element Text xpath=/div/div/newmember</span></li>
+                                    <ul>
+                                        <li>Clear Element Text &#187; 關鍵字</li>
+                                        <li>xpath=/div/div/newmember &#187; 元素定位</li>
+                                    </ul>
+                                </ul>
                             </td>
                         </tr>
                         <tr>
                             <td id="ClickButton">Click Button (按指定按鈕)</td>
-                            <td><em>locator</em>（元素定位)<br>
+                            <td><em>locator</em>（元素定位)，<em>modifier=False</em> (模擬鍵盤行為 CTRL 或 ALT)
                             </td>
-                            <td><span class="example">Click Button 登入<br>
-                                Click Button id=login</span></td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <span class="example">Click Button  name=btn02name
+                                        </span>
+                                    </li>
+                                    <ul>
+                                        <li>Click Button &#187; 關鍵字</li>
+                                        <li>name=btn02name &#187; 使用 name 元素定位</li>
+                                    </ul>
+                                    <li>
+                                        <span class="example">Click Button  xpath=//*[@id="nav-search"]/form/div[2]/div/input CTRL</span>
+                                    </li>
+                                    <ul>
+                                        <li>Click Button &#187; 關鍵字</li>
+                                        <li>xpath=//*[@id="nav-search"]/form/div[2]/div/input &#187; 元素定位</li>
+                                        <li>CTRL &#187; 按元素同時按下 CTRL; 模擬鍵盤行為 CTRL</li>
+                                    </ul>
+                                    <li>
+                                        <span class="example">Click Button  Try It</span>
+                                    </li>
+                                    <ul>
+                                        <li>Click Button &#187; 關鍵字</li>
+                                        <li>Try It &#187; 使用按鈕顯示文字做元素定位</li>
+                                    </ul>
+                                </ul>
+                            </td>
                         </tr>
                         <tr>
                             <td id="ClickElement">Click Element (按指定元素)</td>
-                            <td><em>locator</em>（元素定位)，<em>modifier=False</em> (修飾鍵，鍵盤行為)<br>
+                            <td><em>locator</em>（元素定位)，<em>modifier=False</em> (模擬鍵盤行為 CTRL 或 ALT)<br>
                             </td>
-                            <td><span class="example">Click Element name=login<br>
-                                Click Element xpath=/div/div/login<br>
-                                Click Element name=login
-                                CTRL</span> (按元素時要同時按下 CTRL)
+                            <td>
+                                <ul>
+                                    <li><span class="example">Click Element name=login</span>
+                                    </li>
+                                    <ul>
+                                        <li>Click Element &#187; 關鍵字</li>
+                                        <li>name=login &#187; 元素定位</li>
+                                    </ul>
+                                    <li><span class="example">Click Element xpath=/div/div/login</span></li>
+                                    <ul>
+                                        <li>Click Element &#187; 關鍵字</li>
+                                        <li>xpath=/div/div/login &#187; 元素定位</li>
+                                    </ul>
+                                    <li><span class="example">Click Element id=login-id
+                                    CTRL</span></li> (按元素時要同時按下 CTRL)
+                                    <ul>
+                                        <li>Click Element &#187; 關鍵字</li>
+                                        <li>id=login-id &#187; 元素定位</li>
+                                        <li>CTRL &#187; 按元素同時按下 CTRL; 模擬鍵盤行為 CTRL</li>
+                                    </ul>
+                                </ul>
                             </td>
                         </tr>
                         <tr>
                             <td id="ClickElementAtCoordinates">Click Element At Coordinates (依元素定位的中心點移動 x 跟 y 的位置)</td>
-                            <td><em>locator</em> (元素定位), <em>xoffset</em> (x 點位移), <em>yoffset</em>	 (y 點位移)，<em>modifier=False</em> (修飾鍵)<br>
+                            <td><em>locator</em> (元素定位), <em>xoffset</em> (x 點位移), <em>yoffset</em> (y 點位移)
                             </td>
-                            <td><span class="example">Click Element At Coordinates xpath=/div/div/locate 250 500</span><br><span class="example">Click Element At Coordinates 250 500</span><br>
+                            <td>
+                                <ul>
+                                    <li><span class="example">Click Element At Coordinates xpath=/div/div/locate 250 500</span></li>
+                                    <ul>
+                                        <li>Click Element At Coordinates &#187; 關鍵字</li>
+                                        <li>xpath=/div/div/locate &#187; 元素定位</li>
+                                        <li>250 &#187; x 點位移</li>
+                                        <li>500 &#187; y 點位移</li>
+                                    </ul>
+                                </ul>
                             </td>
                         </tr>
                         <tr>
                             <td id="ClickImage">Click Image (點擊圖示)</td>
-                            <td><em>locator</em> (元素定位)</td>
-                            <td><span class="example">Click Image xpath=/div/div/flower</span>
+                            <td><em>locator</em> (元素定位)，<em>modifier=False</em> (模擬鍵盤行為 CTRL 或 ALT)</td>
+                            <td>
+                                <ul>
+                                    <li><span class="example">Click Image xpath=/div/div/flower</span></li>
+                                    <ul>
+                                        <li>Click Image &#187; 關鍵字</li>
+                                        <li>xpath=/div/div/flower &#187; 元素定位</li>
+                                    </ul>
+                                </ul>
                             </td>
                         </tr>
                         <tr>
                             <td id="ClickLink">Click Link (按指定連結)</td>
                             <td><em>locator</em>（元素定位)<br>
-                                可使用 id，name (名字)，href (網址)以及連結文字
+                                可使用 id，name (名字)，href (網址)以及連結文字，<em>modifier=False</em> (模擬鍵盤行為 CTRL 或 ALT)
                             </td>
-                            <td><span class="example">Click Link 前往首頁<br>
-                                Click Link id=homepage</span></td>
+                            <td>
+                                <ul>
+                                    <li><span class="example">Click Link 前往首頁</span></li>
+                                    <ul>
+                                        <li>Click Link &#187; 關鍵字</li>
+                                        <li>前往首頁 &#187; 連結文字定位</li>
+                                    </ul>
+                                    <li><span class="example">Click Link id=homepage</span></li>
+                                    <ul>
+                                        <li>Click Link &#187; 關鍵字</li>
+                                        <li>id=homepage &#187; id 元素定位</li>
+                                    </ul>
+                                </ul>
+                            </td>
                         </tr>
                         <tr>
                             <td id="CloseAllBrowsers">Close All Browsers (關閉所有瀏覽器)</td>
@@ -219,68 +386,234 @@
                             <td><span class="example">Close Window</span></td>
                         </tr>
                         <tr>
-                            <td id="CoverElement">Cover Element (遮蓋某個元素)</td>
+                            <td id="CoverElement">Cover Element (遮蓋指定元素)</td>
                             <td><em>locator</em> (元素定位)</td>
-                            <td><span class="example">Cover Element xpath=//*[@id="atomic"]</span><br>
-                                使用這個指令之後，指定的元素區塊就會覆蓋一層藍色屏幕，把元素遮蓋起來    
+                            <td>
+                                <ul>
+                                    <li><span class="example">Cover Element xpath=//*[@id="atomic"]</span><br>
+                                    執行指令之後，指定的元素區塊就會覆蓋一層藍色屏幕，把元素遮蓋起來</li>
+                                    <ul>
+                                        <li>Cover Element &#187; 關鍵字</li>
+                                        <li>xpath=//*[@id="atomic"] &#187; 元素定位</li>
+                                    </ul>
+                                </ul>
                             </td>
                         </tr>
                         <tr>
-                            <td id="DeleteAllCookies">Delete All Cookies (刪除所有頁面追蹤紀錄)</td>
+                            <td id="CurrentFrameShouldContain">Current Frame Should Contain (浮動框架應該包含)</td>
+                            <td><em>text</em>（預期文字)</td>
+                            <td>
+                                <ul>
+                                    <li><span class="example">Current Frame Should Contain Submit</span></li>
+                                    <ul>
+                                        <li>Current Frame Should Contain &#187; 關鍵字</li>
+                                        <li>Submit &#187; 預期文字</li>
+                                    </ul>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="CurrentFrameShouldNotContain">Current Frame Should Not Contain (浮動框架不應該包含)</td>
+                            <td><em>text</em>（預期文字）</td>
+                            <td>
+                                <ul>
+                                    <li><span class="example">Current Frame Should Not Contain Cancel</span></li>
+                                    <ul>
+                                        <li>Current Frame Should Not Contain &#187; 關鍵字</li>
+                                        <li>Cancel &#187; 預期文字</li>
+                                    </ul>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="DeleteAllCookies">Delete All Cookies (刪除所有頁面喜好紀錄)</td>
                             <td></td>
                             <td><span class="example">Delete All Cookies</span></td>
                         </tr>
                         <tr>
                             <td id="DoubleClickElement">Double Click Element (點擊指定元素兩次)</td>
                             <td><em>locator</em> (元素定位)</td>
-                            <td><span class="example">Double Click Element xpath=/div/div/name/click</span></td>
+                            <td>
+                                <ul>
+                                    <li><span class="example">Double Click Element xpath=/div/div/name/click</span></li>
+                                    <ul>
+                                        <li>Double Click Element &#187; 關鍵字</li>
+                                        <li>xpath=/div/div/name/click &#187; 元素定位</li>
+                                    </ul>
+                                </ul>
+                            </td>
                         </tr>
                         <tr>
                             <td id="DragAndDrop">Drag And Drop (拖拉元素)</td>
-                            <td><em>locator</em> (元素定位)，<em>target</em> (拖曳目標位置) </td>
-                            <td><span class="example">Drag And Drop xpath=/div/div/name/location xpath=/div/div/location2</span></td>
+                            <td><em>locator</em> (元素定位拖曳起始位置)，<em>target</em> (拖曳目標位置) </td>
+                            <td>
+                                <ul>
+                                    <li><span class="example">Drag And Drop xpath=/div/div/name/location xpath=/div/div/location2</span></li>
+                                    <ul>
+                                        <li>Drag And Drop &#187; 關鍵字</li>
+                                        <li>xpath=/div/div/name/location &#187; 元素定位拖曳起始位置</li>
+                                        <li>xpath=/div/div/name/location2 &#187; 元素定位拖曳目標位置</li>
+                                    </ul>
+                                </ul>
+                            </td>
                         </tr>
                         <tr>
                             <td id="DragAndDropOffset">Drag And Drop By Offset (拖拉元素位移定位)</td>
-                            <td><em>locator</em> (元素定位)，<em>xoffset</em> (x 點位移), <em>yoffset</em>	 (y 點位移)</td>
-                            <td><span class="example">Drag And Drop By Offset xpath=/div/div/name/location  50  -30</span></td>
+                            <td><em>locator</em> (元素定位)，<em>xoffset</em> (x 點位移定位), <em>yoffset</em>	 (y 點位移定位)</td>
+                            <td>
+                                <ul>
+                                    <span class="example">Drag And Drop By Offset xpath=/div/div/name/location  50  -30</span>
+                                    <ul>
+                                        <li>Drag And Drop By Offset &#187; 關鍵字</li>
+                                        <li>xpath=/div/div/name/location &#187;元素定位</li>
+                                        <li>50 &#187; x 點位移定位</li>
+                                        <li>-30 &#187; y 點位移定位</li>
+                                    </ul>
+                                </ul>
+                            </td>
                         </tr>
                         <tr>
                             <td id="ElementAttributeValueShouldBe">Element Attribute Value Should Be (元素屬性的值應該是)</td>
-                            <td><em>locator</em>（元素定位）, <em>attribute</em> (屬性), <em>expected</em> (預期值), <em>message=None</em> (執行失敗訊息顯示)
+                            <td><em>locator</em>（元素定位）, <em>attribute</em> (屬性名字), <em>expected</em> (預期值)，<em>message=None</em> (執行失敗顯示的訊息，設定之後覆蓋預設的錯誤訊息)
                             </td>
-                            <td><span class="example">Element Attribute Value Should Be xpath=/div/div/example src img_dog.png</span></td>
+                            <td>
+                                <p>請參考下面圖示了解屬性與屬性值：</p>
+                                <img src="img/attribute.png" alt="">
+                                <ul>
+                                    <li><span class="example">Element Attribute Value Should Be xpath=/div/div/example src dessert.jpg</span></li>
+                                    <ul>
+                                        <li>Element Attribute Value Should Be &#187; 關鍵字</li>
+                                        <li>xpath=/div/div/example &#187; 元素定位</li>
+                                        <li>src &#187; 屬性名字</li>
+                                        <li>dessert.jpg &#187; 屬性預期值</li>
+                                    </ul>
+                                </ul>
+                            </td>
                         </tr>
                         <tr>
-                            <td id="ElementShouldBeDisabled">Element Should Be Disabled (元素不在啟用狀態)</td>
+                            <td id="ElementShouldBeDisabled">Element Should Be Disabled (元素應在停用狀態)</td>
                             <td><em>locator</em>（元素定位）</td>
-                            <td><span class="example">Element Should Be Disabled xpath=/div/div/elementdisabled</span></td>
+                            <td>
+                                <ul>
+                                    <li><span class="example">Element Should Be Disabled xpath=/div/div/elementdisabled</span></li>
+                                    <ul>
+                                        <li>Element Should Be Disabled &#187; 關鍵字</li>
+                                        <li>xpath=/div/div/elementdisabled &#187; 元素定位</li>
+                                    </ul>
+                                </ul>
+                            </td>
                         </tr>
                         <tr>
                             <td id="ElementShouldBeEnabled">Element Should Be Enabled (元素在啟用狀態)</td>
                             <td><em>locator</em>（元素定位）</td>
-                            <td><span class="example">Element Should Be Enabled xpath=/div/div/elementenabled</span></td>
+                            <td>
+                                <ul>
+                                    <li><span class="example">Element Should Be Enabled xpath=/div/div/elementenabled</span></li>
+                                    <ul>
+                                        <li>Element Should Be Enabled &#187; 關鍵字</li>
+                                        <li>xpath=/div/div/elementenabled &#187; 元素定位</li>
+                                    </ul>
+                                </ul>
+                            </td>
                         </tr>
                         <tr>
                             <td id="ElementShouldBeFocused">Element Should Be Focused (元素在聚焦狀態)</td>
                             <td><em>locator</em>（元素定位）</td>
-                            <td><span class="example">Element Should Be Foused xpath=/div/div/elementinfocus</span></td>
+                            <td>
+                                <ul>
+                                    <li><span class="example">Element Should Be Foused xpath=/div/div/elementinfocus</span></li>
+                                    <ul>
+                                        <li>Element Should Be Foused &#187; 關鍵字</li>
+                                        <li>xpath=/div/div/elementinfocus &#187; 元素定位</li>
+                                    </ul>
+                                </ul>
+                            </td>
                         </tr>
                         <tr>
                             <td id="ElementShouldBeVisible">Element Should Be Visible (元素在顯示狀態)</td>
-                            <td><em>locator</em>（元素定位），<em>message=None</em> (執行失敗訊息顯示)</td>
-                            <td><span class="example">Element Should Be Visible xpath=/div/div/elementvisible</span></td>
+                            <td><em>locator</em>（元素定位），<em>message=None</em> (執行失敗顯示的訊息，設定之後覆蓋預設的錯誤訊息)</td>
+                            <td>
+                                <ul>
+                                    <li><span class="example">Element Should Be Visible xpath=/div/div/elementvisible</span></li>
+                                    <ul>
+                                        <li>Element Should Be Visible &#187; 關鍵字</li>
+                                        <li>xpath=/div/div/elementvisible &#187; 元素定位</li>
+                                    </ul>
+                                </ul>
+                            </td>
                         </tr>
                         <tr>
-                            <td id="ElementShouldContain">「待確認」Element Should Contain (元素定位包含文字)</td>
+                            <td id="ElementShouldContain">Element Should Contain (元素包含預期文字)</td>
                             <td><em>locator</em>（元素定位），<em>expected</em>（預期文字），<em>message=None</em> (設定錯誤訊息回傳顯示。可覆蓋預設的錯誤訊息)，<em>ignore_case=False</em> (可設定成 True 不比對大小寫文字)
                             </td>
-                            <td><span class="example">Element Should Contain xpath=/div/div/elementcontain elementcontain</span></td>
+                            <td>
+                                <ul>
+                                    <li><span class="example">Element Should Contain xpath=/div/div/elementcontain 遊樂園</span></li>
+                                    <ul>
+                                        <li>Element Should Contain &#187; 關鍵字</li>
+                                        <li>xpath=/div/div/elementcontain &#187; 元素定位</li>
+                                        <li>簡單學習 &#187; 預期文字</li>
+                                    </ul>
+                                </ul>
+                            </td>
                         </tr>
                         <tr>
-                            <td id="ElementTextShouldBe">Element Text Should Be (元素顯示文字)</td>
-                            <td><em>locator</em>（元素定位）, <em>expected</em>（元素預期文字）</td>
-                            <td><span class="example">Element Text Should Be id=#home 前往首頁</span></td>
+                            <td id="ElementShouldNotBeVisible">Element Should Not Be Visible (元素不顯示)</td>
+                            <td><em>locator</em>（元素定位），<em>message=None</em> (設定錯誤訊息回傳顯示。可覆蓋預設的錯誤訊息)
+                            </td>
+                            <td>
+                                <ul>
+                                    <li><span class="example">Element Should Not Be Visible xpath=/div/div/elementNOTvisible</span></li>
+                                    <ul>
+                                        <li>Element Should Not Be Visible &#187; 關鍵字</li> 
+                                        <li>xpath=/div/div/elementNOTvisible &#187; 元素定位</li>
+                                    </ul>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="ElementShouldNotContain">Element Should Not Contain (元素不包含預期文字)</td>
+                            <td><em>locator</em>（元素定位），<em>expected</em>（預期文字），<em>message=None</em> (設定錯誤訊息回傳顯示。可覆蓋預設的錯誤訊息)，<em>ignore_case=False</em> (可設定成 True 不比對大小寫，預設為 False)
+                            </td>
+                            <td>
+                                <ul>
+                                    <li><span class="example">Element Should Not Contain xpath=/div/div/elementNOTcontain  </span></li>
+                                    <ul>
+                                        <li>Element Should Not Contain &#187; 關鍵字</li>
+                                        <li>xpath=/div/div/elementNOTcontain &#187; 元素定位</li>
+                                        <li>好難好難 &#187; 預期文字</li>
+                                    </ul>
+                                </ul>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="ElementTextShouldBe">Element Text Should Be (元素預期文字)</td>
+                            <td><em>locator</em>（元素定位），<em>expected</em>（預期文字），<em>message=None</em> (設定錯誤訊息回傳顯示。可覆蓋預設的錯誤訊息)，<em>ignore_case=False</em> (可設定成 True 不比對大小寫，預設為 False)</td>
+                            <td>
+                                <ul>
+                                    <li><span class="example">Element Text Should Be id=#home 專注學習</span></li>
+                                    <ul>
+                                        <li>Element Text Should Be &#187; 關鍵字</li>
+                                        <li>id=#home &#187; 元素定位</li>
+                                        <li>專注學習 &#187; 預期文字</li>
+                                    </ul>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="ElementTextShouldNotBe">Element Text Should Not Be (元素不預期文字)</td>
+                            <td><em>locator</em>（元素定位），<em>expected</em>（預期文字），<em>message=None</em> (設定錯誤訊息回傳顯示。可覆蓋預設的錯誤訊息)，<em>ignore_case=False</em> (可設定成 True 不比對大小寫，預設為 False)</td>
+                            <td>
+                                <ul>
+                                    <li><span class="example">Element Text Should Not Be id=#home 看不懂</span></li>
+                                    <ul>
+                                        <li>Element Text Should Not Be &#187; 關鍵字</li>
+                                        <li>id=#home &#187; 元素定位</li>
+                                        <li>看不懂 &#187; 預期文字</li>
+                                    </ul>
+                                </ul>
+                            </td>
                         </tr>
                         <tr>
                             <td id="ExecuteJavascript">Execute Javascript (執行 Javascript)</td>
@@ -289,24 +622,328 @@
                                 <p>要使用這個關鍵字需要對 Javascript DOM 有一定的瞭解。下面列出幾個範例:</p>
                                 <ul>
                                     <li>
-                                        找尋頁面指定元素 id "ColorButton" 狀態改為非啟用<br>
-                                        <span class="example">Execute Javascript document.getElementById("ColorButton").disabled=false</span>
+                                        找尋頁面指定元素 id "ColorButton" 並且把狀態改為停用<br>
+                                        <span class="example">Execute Javascript document.getElementById("ColorButton").disabled=true</span>
+                                        <ul>
+                                            <li>Execute Javascript &#187; 關鍵字</li>
+                                            <li>document.getElementById("ColorButton") &#187; 取得頁面元素 ID</li>
+                                            <li>.disabled=true &#187; 停用元素狀態</li>
+                                        </ul>
                                     </li>
-                                    <li>
+                                    <!-- <li>
                                         選指定元素 id "ProductName" 裡面的 "jquery"<br>
-                                        <span class="example">Execute Javascript $("#ProductName").val("jquery")</span>
+                                        <span class="example">Execute Javascript $("#ProductName").val("pencil")</span>
+                                        <ul>
+                                            <li>Execute Javascript &#187; 關鍵字</li>
+                                            <li>$("#ProductName") &#187; 取得頁面元素 ID</li>
+                                            <li>.val("pencil") &#187; 停用元素</li>
+                                        </ul>
                                     </li>
                                     <li>
                                         按指定元素 id "ProductName"<br>
                                         <span class="example">Execute Javascript $("#ProductName").click()</span>
+                                    </li> -->
+                                    <li>
+                                        在已開啟的瀏覽器開啟一個指定網址的新分頁<br>
+                                        <span class="example">Execute Javascript window.open("https://carleenlean.github.io/")</span>
+                                        <ul>
+                                            <li>Execute Javascript &#187; 關鍵字</li>
+                                            <li>window.open("https://carleenlean.github.io/") &#187; 在已開啟的瀏覽器開啟一個指定網址的新分頁</li>
+                                        </ul>
                                     </li>
                                     <li>
-                                        開啟一個指定網址的新視窗<br>
-                                        <span class="example">Execute Javascript window.open()</span>
+                                        開啟一個警示視窗<br>
+                                        <span class="example">Execute Javascript alert("How is the progress?");</span>
+                                        <ul>
+                                            <li>Execute Javascript &#187; 關鍵字</li>
+                                            <li>alert("How is the progress?"); &#187; 開啟一個警示視窗並顯示訊息</li>
+                                        </ul>
                                     </li>
                                 </ul>
                             </td>
                         </tr>
+                        <tr>
+                            <td id="FrameShouldContain">Frame Should Contain (浮動框架應該包含文字)</td>
+                            <td>
+                                <em>locator</em>（元素定位），<em>text</em>（預期文字）
+                            </td>
+                            <td>
+                                <ul>
+                                    <li><span class="example">Frame Should Contain xpath=/div/div/iframelocate 繼續努力</span></li>
+                                    <ul>
+                                        <li>Frame Should Contain &#187; 關鍵字</li>
+                                        <li>xpath=/div/div/iframelocate &#187; 元素定位</li>
+                                        <li>繼續努力 &#187; 預期文字</li>
+                                    </ul>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="GetAllLinks">Get All Links (取得頁面所有連結的 ID)</td>
+                            <td></td>
+                            <td>
+                                <p>Get All Links 關鍵字所取得的是原始 HTML 檔案裡面連結設定的 ID。</p>
+                                <img src="img/getalllinks_ids.png">
+                                <p>如果連結尚未設置所屬 ID，測試報告結果回傳的會是空值。</p>
+                                <img src="img/getalllinks_report.png">
+                                <p>使用方法如下：</p>
+                                <ul>
+                                    <li><span class="example">${allLinks}=    Get All Links</span></li>
+                                    <ul>
+                                        <li>${allLinks}= &#187; 設置變數把關鍵字取得的資訊儲存在這個變數裡面</li>
+                                        <li>Get All Links &#187; 關鍵字</li>
+                                    </ul>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="GetCookie">Get Cookie (取得瀏覽器 Cookie)</td>
+                            <td><em>name</em>（cookie 名字）</td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <span class="example">${cookie}=  Get Cookie  foo</span>
+                                    </li>
+                                    <ul>
+                                        <li>${cookie}= &#187; 儲存變數</li>
+                                        <li>Get Cookie &#187; 取得瀏覽器 Cookie</li>
+                                        <li>foo &#187; cookie 名字</li>
+                                    </ul>
+                                    <p>如果指定的 cookie 名字 (foo) 不存在，這個測試結果會是執行失敗。</p>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="GetElementAttribute">Get Element Attribute (回傳屬性值)</td>
+                            <td><em>locator</em>（元素定位)，<em>attribute</em>（屬性)</td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <span class="example">${savebox}= Get Element Attribute link=Login name </span>
+                                    </li>
+                                    <ul>
+                                        <li>${savebox}= &#187; 儲存變數</li>
+                                        <li>Get Element Attribute &#187; 關鍵字</li>
+                                        <li>link=Login &#187; 連結元素定位</li>
+                                        <li>name &#187; 屬性</li>
+                                    </ul>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="GetElementCount">Get Element Count (回傳指定元素數量)</td>
+                            <td><em>locator</em>（元素定位)</td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <span class="example">${counts}= Get Element Count class=food</span>
+                                    </li>
+                                    <ul>
+                                        <li>${counts}= &#187; 儲存變數</li>
+                                        <li>Get Element Count &#187; 關鍵字</li>
+                                        <li>class=food &#187; 元素定位</li>
+                                    </ul>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="GetElementSize">Get Element Size (回傳指定元素尺寸)</td>
+                            <td><em>locator</em>（元素定位)</td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <span class="example">${width} ${height} Get Element Size xpath=/div/div/studyimage </span>
+                                    </li>
+                                    <ul>
+                                        <li>${width} &#187; 寬儲存格</li>
+                                        <li>${height}= &#187; 高儲存格</li>
+                                        <li>Get Element Size &#187; 關鍵字</li>
+                                        <li>xpath=/div/div/studyimage &#187; 元素定位</li>
+                                    </ul>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="GetHorizontalPosition">Get Horizontal Position (回傳頁面橫向位置)</td>
+                            <td><em>locator</em>（元素定位)</td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <span class="example">Get Horizontal Position xpath=/div/div/playbutton </span>
+                                    </li>
+                                    <ul>
+                                        <li>${horzposition}= &#187; 儲存變數</li>
+                                        <li>Get Horizontal Position &#187; 關鍵字</li>
+                                        <li>xpath=/div/div/playbutton &#187; 元素定位</li>
+                                        <p>起算位置從頁面左側起算</p>
+                                    </ul>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="GetListItems">Get List Items (回傳清單項目)</td>
+                            <td><em>locator</em>（元素定位)，<em>values=False</em>（數值回傳設定)</td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <span class="example">${whatbuy}= Get List Items name=grocery value=True</span>
+                                    </li>
+                                    <ul>
+                                        <li>${whatbuy}= &#187; 儲存變數</li>
+                                        <li>Get List Items &#187; 關鍵字</li>
+                                        <li>name=grocery &#187; 元素定位</li>
+                                        <li>value=True &#187; value（數值）設置為 True 時，會回傳數值。預設回傳 Label (HTML 標籤)</li>
+                                    </ul>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="GetLocation">Get Location (回傳目前瀏覽視窗網址)</td>
+                            <td></td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <span class="example">${location}= Get Location</span>
+                                        <span class="example">Log ${location}</span>
+
+                                    </li>
+                                    <ul>
+                                        <li>${location}= &#187; 儲存變數</li>
+                                        <li>Get Location &#187; 關鍵字</li>
+                                        <li>Log &#187; 印出儲存變數回傳網址</li>
+                                    </ul>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="GetLocations">Get Locations (回傳瀏覽器所有網址)</td>
+                            <td><em>browser=CURRENT</em> (指定回傳的瀏覽器)</td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <span class="example">${locations}= Get Locations browser=CURRENT</span>
+                                        <span class="example">Log ${locations}</span>
+                                    </li>
+                                    <ul>
+                                        <li>${locations}= &#187; 儲存變數</li>
+                                        <li>Get Locations &#187; 關鍵字</li>
+                                        <li>browser=CURRENT &#187; 指定回傳的瀏覽器</li>
+                                        <ul>
+                                            <li>index or alias: 可依瀏覽器設置的索引設定抓取的瀏覽器</li>
+                                            <li>CURRENT: 目前所在的啟用狀態的瀏覽器</li>
+                                            <li>ALL: 所有開啟的瀏覽器視窗</li>
+                                        </ul>
+                                        <li>Log &#187; 印出儲存變數回傳網址</li>
+                                    </ul>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="GetSelectedListLabel">Get Selected List Label (回傳表單標籤)</td>
+                            <td><em>locator</em>（元素定位)</td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <span class="example">${listlabel}= Get Selected List Label name=grocery-list</span>
+                                    </li>
+                                    <ul>
+                                        <li>${listlabel}= &#187; 儲存變數</li>
+                                        <li>Get Selected List Label &#187; 關鍵字</li>
+                                        <li>name=box &#187; 元素定位</li>
+                                    </ul>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="GetSelectedListLabels">Get Selected List Labels (回傳多個表單標籤)</td>
+                            <td><em>locator</em>（元素定位)</td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <span class="example">${listfood}= Get Selected List Labels name=food-list</span>
+                                    </li>
+                                    <ul>
+                                        <li>${listfood}= &#187; 儲存變數</li>
+                                        <li>Get Selected List Labels &#187; 關鍵字</li>
+                                        <li>name=food-list &#187; 元素定位</li>
+                                    </ul>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="GetSelectedListValue">Get Selected List Value (回傳表單的值)</td>
+                            <td><em>locator</em>（元素定位)</td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <span class="example">${listfood}= Get Selected List Value name=food-list</span>
+                                    </li>
+                                    <ul>
+                                        <li>${listfood}= &#187; 儲存變數</li>
+                                        <li>Get Selected List Value &#187; 關鍵字</li>
+                                        <li>name=bottle &#187; 元素定位</li>
+                                    </ul>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="GetSelectedListValues">Get Selected List Values (回傳多個表單的值)</td>
+                            <td><em>locator</em>（元素定位)</td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <span class="example">${listfood}= Get Selected List Values name=food-list</span>
+                                    </li>
+                                    <ul>
+                                        <li>${listfood}= &#187; 儲存變數</li>
+                                        <li>Get Selected List Values &#187; 關鍵字</li>
+                                        <li>name=item-list &#187; 元素定位</li>
+                                    </ul>
+                                </ul>
+                            </td>
+                        </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                         <tr>
                             <td id="InputPassword">Input Password (輸入密碼)</td>
                             <td>
@@ -314,7 +951,16 @@
                                 <em>password</em> (密碼)： 輸入的密碼<br>
                                 <em>clear=True</em> (清除)： 輸入密碼之前清除欄位既有密碼
                             </td>
-                            <td><span class="example">Input Password xpath=/div/div/password password111</span>
+                            <td>
+                                <ul>
+                                    <li><span class="example">Input Password xpath=/div/div/password password111 True</span></li>
+                                    <ul>
+                                        <li>Input Password &#187; 關鍵字</li>
+                                        <li>xpath=/div/div/password &#187; 元素定位</li>
+                                        <li>password111 &#187; 輸入欄位的密碼</li>
+                                        <li>True &#187; 輸入前先清除欄位既有資訊</li>
+                                    </ul>
+                                </ul>
                             </td>
                         </tr>
                         <tr>
@@ -324,31 +970,66 @@
                                 <em>text</em> (文字)： 輸入的文字<br>
                                 <em>clear=True</em> (清除)： 輸入文字之前清除欄位既有文字
                             </td>
-                            <td><span class="example">Input Text xpath=/div/div/text user01</span></td>
+                            <td>
+                                <ul>
+                                    <li><span class="example">Input Text xpath=/div/div/text user01 False</span></li>
+                                    <ul>
+                                        <li>Input Text &#187; 關鍵字</li>
+                                        <li>xpath=/div/div/user01 &#187; 元素定位</li>
+                                        <li>user01 &#187; 輸入欄位的密碼</li>
+                                        <li>False &#187; 輸入前不清除欄位既有資訊</li>
+                                    </ul>
+                                </ul>
+                            </td>
                         </tr>
                         <tr>
                             <td id="OpenBrowser">Open Browser (開啟瀏覽器)</td>
                             <td><em>url=None</em> (設定網址), <em>browser=firefox
                             </em> (指定瀏覽器) </td>
-                            <td><span class="example">Open Browser https://www.yahoo.com.tw chrome</span><br>
-                            如果沒有指定瀏覽器，執行時就會使用預設的瀏覽器執行。
+                            <td>
+                                <ul>
+                                    <li><span class="example">Open Browser https://www.yahoo.com.tw chrome</span></li>
+                                    <ul>
+                                        <li>Open Browser &#187; 關鍵字</li>
+                                        <li>https://www.yahoo.com.tw &#187; 指定網址</li>
+                                        <li>chrome &#187; 指定開啟的瀏覽器</li>
+                                    </ul>
+                                    <p>&#8251;如果沒有指定瀏覽器，執行時就會使用預設的瀏覽器執行。</p>
+                                </ul>
                             </td>
                         </tr>
                         <tr>
                             <td id="PageShouldContainElement">Page Should Contain Element (頁面應包含此元素)</td>
-                            <td><em>locator</em>（元素定位）: 指定元素位置</td>
-                            <td><span class="example">Page Should Contain Element xpath=/div/div/element</span><br>
+                            <td><em>locator</em>（元素定位）</td>
+                            <td>
+                                <ul>
+                                    <li><span class="example">Page Should Contain Element id="CSSName"</span></li>
+                                    <ul>
+                                        <li>Page Should Contain Element &#187; 關鍵字</li>
+                                        <li>id="CSSName" &#187; 元素定位</li>
+                                    </ul>
+                                </ul>
                             </td>
                         </tr>
                         <tr>
                             <td id="WaitUntilPageContains">Wait Until Page Contains (等待直到頁面包含某個文字)</td>
                             <td><em>text</em> (文字): 指定包含的文字<br><em>timeout</em>（超時）: 限制等待出現的時間，如果時間到了文字尚未出現，測試顯示失敗<br><em>error</em>（錯誤）: 設定在報告中顯示的錯誤訊息</td>
-                            <td><span class="example">Wait Until Page Contains  登入  5s  等待超時</span>
+                            <td>
+                                <ul>
+                                    <li><span class="example">Wait Until Page Contains  登入  5s  等待超時</span></li>
+                                    <ul>
+                                        <li>Wait Until Page Contains &#187; 關鍵字</li>
+                                        <li>登入 &#187; 元素定位</li>
+                                        <li>5s &#187; 設置等待元素顯示的時間</li>
+                                        <li>等待超時 &#187; 設置測試失敗顯示的訊息</li>
+                                    </ul>
+                                </ul>
                             </td>
                         </tr>
                     </tbody>
                 </table>
         </div>
+        <a href="#top" id="goup">回到最上面</a>
         <a href="contact.html" id="contact">問問題</a>
         <footer>
             Copyright © 2020 黑皮腦袋黑皮生活保留一切權利  <a href="#top">&#8682</a>

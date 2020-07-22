@@ -1,6 +1,10 @@
 /* Style the links inside the sidenav */
 #sidenav a {
     position: fixed;
+    /* 讓選單出現 */
+    /* text-align: right;
+    left: -65px; */
+    /* 讓選單隱藏 */
     left: -120px;
     transition: 0.3s;
     padding: 15px;
@@ -79,9 +83,20 @@
     margin-top: 15px;
     margin-bottom: 15px;
 }
-#contact {
+#goup {
     position: fixed;
     top: 90%;
+    right: -5px;
+    border-radius: 5px;
+    border: 1px solid #2031ad;
+    padding: 15px 10px;
+    /* background-color: rgb(219, 239, 245); */
+    color: #580956;
+    text-decoration: none;
+}
+#contact {
+    position: fixed;
+    top: 82%;
     right: -5px;
     border-radius: 5px;
     border: 1px solid #2031ad;
