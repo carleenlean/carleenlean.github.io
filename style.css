@@ -1,26 +1,121 @@
+/* @media only screen and (min-width: 600px) {
+    body {
+        margin: 0 auto;
+        width: 900px;
+        border: 5px solid red;
+    }
+} */
 
-body {
-    background-color: orange;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.jumbotron {
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
+    font-family: 'Rock Salt', cursive;
     font-size: 60px;
-}
-.top {
-    position: absolute;
-    left: 150px;
-    top: 150px;
-}
-.center {
-    margin: auto;
-    width: 50%;
-    padding-top: 260px;
+	color: 	#663399;
+    margin: 35px 60px;
+    text-decoration: underline;
+    transform: rotate(-10deg);
     text-align: center;
+    background-color: transparent;
 }
-.bottom {
-    margin: auto;
-    width: 90%;
+
+.jumbotron a {
+    color: inherit;
+}
+
+#nav {
+    font-size: 25px;
+    padding: 10px 60px 15px 60px;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
+    font-family: 'Rock Salt', cursive;
+}
+
+#website {
+    font-size: 30px;
+    padding: 10px 60px 15px 60px;
+    text-align: justify;
+}
+
+.sloganbox {
+    border-left: 10px solid #5f5fb9;
+    background-color: #dcfdfd;
+    border-radius: 5px 0px 0px 5px;
+    margin: 10px 60px;
+}
+
+.sloganboxwork {
+    border-left: 10px solid #56a94e;
+    background-color: #dcfdfd;
+    border-radius: 5px 0px 0px 5px;
+    margin: 10px 60px;
+}
+
+.sloganboxlove {
+    border-left: 10px solid #e23e42;
+    background-color: #dcfdfd;
+    border-radius: 5px 0px 0px 5px;
+    margin: 10px 60px;
+}
+
+.slogan {
+    list-style-type: none;
     text-align: center;
+    font-size: 26px;
+    padding-top: 15px;
+    padding-left: 15px;
 }
-a {
-    text-decoration: none;
+
+#social {
+    font-size: 30px;
+    padding: 15px 60px;
 }
+
+footer {
+    margin: 10px -15px;
+    font-style: italic;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+/* #seleniumlibrary {
+    top: 240px;
+    background-color: #a154a2;
+}
+
+#dialogs {
+    top: 335px;      
+    background-color: #5f5fb9;
+}
+
+#string {
+    top: 405px;
+    background-color: #52bad8;
+}
+
+#datetime {
+    top: 475px;
+    background-color: #56a94e;
+}
+
+#collections {
+    top: 545px;
+    background-color: #f3a333;
+}
+
+#builtin {
+    top: 615px;
+    background-color: #ee7a3a;
+}
+
+#others {
+    top: 685px;
+    background-color: #e23e42;
+} */
